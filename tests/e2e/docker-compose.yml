@@ -1,0 +1,68 @@
+# Disposable WordPress for end-to-end tests. Separate compose project, separate
+# port, database on tmpfs: `bin/e2e-env.sh down` removes everything it created and
+# nothing else. It never touches the development site from the root
+# docker-compose.yml.
+#
+# The plugin is mounted read-only from the *built* distributable (bin/build.sh
+# output, unzipped), so these tests also prove the zip runs without Composer.
+name: cmp-e2e
+
+services:
+  db:
+    image: ${CMP_E2E_DB_IMAGE:-mariadb:11}
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: wordpress
+      MARIADB_ROOT_PASSWORD: wordpress
+    tmpfs:
+      - /var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+
+  wordpress:
+    image: wordpress:${CMP_E2E_WP_TAG:-php8.1-apache}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${CMP_E2E_PORT:-8891}:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DEBUG: 1
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_DEBUG_LOG', '/tmp/wp-debug.log');
+        define('WP_DEBUG_DISPLAY', true);
+        define('DISABLE_WP_CRON', true);
+        define('AUTOMATIC_UPDATER_DISABLED', true);
+        define('WP_ENVIRONMENT_TYPE', 'local');
+    volumes:
+      - wp:/var/www/html
+      - ./.build/consentimental:/var/www/html/wp-content/plugins/consentimental:ro
+      - ./mu-plugins:/var/www/html/wp-content/mu-plugins:ro
+      - ../..:/cmp-src:ro
+
+  cli:
+    image: wordpress:${CMP_E2E_CLI_TAG:-cli-php8.1}
+    user: "33:33"
+    depends_on:
+      - wordpress
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+    volumes:
+      - wp:/var/www/html
+      - ./.build/consentimental:/var/www/html/wp-content/plugins/consentimental:ro
+      - ./mu-plugins:/var/www/html/wp-content/mu-plugins:ro
+    entrypoint: ["tail", "-f", "/dev/null"]
+
+volumes:
+  wp:

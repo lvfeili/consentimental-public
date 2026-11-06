@@ -1,0 +1,3585 @@
+# Copyright (C) 2026 Philipp Krüger
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Consentimental 0.3.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/consentimental\n"
+"POT-Creation-Date: 2026-10-16T16:04:10+00:00\n"
+"PO-Revision-Date: 2026-10-16 18:05+0200\n"
+"Last-Translator: Consentimental contributors\n"
+"Language-Team: German\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: consentimental\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Plugin Name of the plugin
+#: consentimental.php src/Admin/AdminMenu.php:149 src/Admin/AdminMenu.php:150
+#: templates/admin/dashboard.php:24
+msgid "Consentimental"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: consentimental.php
+msgid "https://github.com/philippkrueger/consentimental"
+msgstr ""
+
+#. Description of the plugin
+#: consentimental.php
+msgid ""
+"Consent management that enforces blocking, not just a banner. GDPR/ePrivacy-"
+"compatible consent collection with prior blocking of consent-dependent "
+"technologies."
+msgstr ""
+
+#. Author of the plugin
+#: consentimental.php
+msgid "Philipp Krüger"
+msgstr ""
+
+#. Author URI of the plugin
+#: consentimental.php
+msgid "https://www.philippkrueger.com/"
+msgstr ""
+
+#: src/Admin/AdminMenu.php:62
+msgid "Consentimental has unpublished changes."
+msgstr ""
+
+#: src/Admin/AdminMenu.php:64
+msgid "Review and publish"
+msgstr ""
+
+#: src/Admin/AdminMenu.php:141
+msgid "Settings saved."
+msgstr "Einstellungen gespeichert."
+
+#: src/Admin/BannerPage.php:100 src/Admin/BannerPage.php:101
+#: templates/admin/banner.php:63 templates/admin/disclosure-snapshot.php:37
+msgid "Banner"
+msgstr "Banner"
+
+#: src/Admin/CategoriesPage.php:56 src/Admin/CategoriesPage.php:57
+#: templates/admin/categories.php:18 templates/admin/consent-log.php:112
+#: templates/admin/dashboard.php:128 templates/admin/publish.php:18
+msgid "Categories"
+msgstr "Kategorien"
+
+#: src/Admin/ConsentLogPage.php:50
+msgid "You do not have permission to export consent records."
+msgstr ""
+
+#: src/Admin/ConsentLogPage.php:153
+msgid "First stored at publish (site default language)"
+msgstr ""
+
+#: src/Admin/ConsentLogPage.php:154
+msgid "First stored when settings changed (site default language)"
+msgstr ""
+
+#: src/Admin/ConsentLogPage.php:155
+msgid "First stored when shown to a visitor"
+msgstr ""
+
+#: src/Admin/ConsentLogPage.php:164 src/Admin/ConsentLogPage.php:165
+#: templates/admin/consent-log.php:23
+msgid "Consent log"
+msgstr "Einwilligungsprotokoll"
+
+#: src/Admin/ProxyHealthPage.php:15 templates/admin/proxy-health.php:14
+msgid "Proxy diagnostics"
+msgstr "Proxy-Diagnose"
+
+#: src/Admin/ProxyHealthPage.php:40
+msgid ""
+"Consentimental: proxy forwarding is failing. Review the diagnostics before "
+"relying on this integration."
+msgstr ""
+
+#: src/Admin/ProxyHealthPage.php:40
+msgid "View diagnostics"
+msgstr ""
+
+#: src/Admin/PublishPage.php:48 src/Admin/PublishPage.php:49
+#: templates/admin/publish.php:27
+msgid "Review & Publish"
+msgstr ""
+
+#: src/Admin/ScannerPage.php:51 src/Admin/ScannerPage.php:52
+#: templates/admin/scanner.php:32 templates/admin/scanner.php:45
+#: templates/admin/services.php:41
+msgid "Scan site"
+msgstr ""
+
+#: src/Admin/ScriptsPage.php:63 src/Admin/ScriptsPage.php:64
+#: templates/admin/publish.php:21 templates/admin/scripts.php:20
+msgid "Scripts"
+msgstr "Skripte"
+
+#: src/Admin/ServicesPage.php:77
+msgid "Suggest cookies from domains"
+msgstr ""
+
+#: src/Admin/ServicesPage.php:85 src/Admin/ServicesPage.php:86
+#: templates/admin/dashboard.php:150 templates/admin/services.php:26
+msgid "Services"
+msgstr "Dienste"
+
+#: src/Admin/ServicesPage.php:205
+msgid "Cookie Policy"
+msgstr ""
+
+#: src/Admin/ServicesPage.php:208
+msgid ""
+"Below is a list of the cookies and similar technologies we use on this site, "
+"what they do, and how long they last."
+msgstr ""
+
+#: src/Admin/SetupPage.php:58
+msgid "Discover"
+msgstr ""
+
+#: src/Admin/SetupPage.php:59 templates/admin/dashboard.php:53
+msgid "Review services"
+msgstr ""
+
+#: src/Admin/SetupPage.php:60
+msgid "Resolve problems"
+msgstr ""
+
+#: src/Admin/SetupPage.php:61
+msgid "Banner and policy"
+msgstr ""
+
+#: src/Admin/SetupPage.php:62
+msgid "Preview and publish"
+msgstr ""
+
+#: src/Admin/SetupPage.php:63
+msgid "Verify"
+msgstr ""
+
+#: src/Admin/SetupPage.php:82 src/Admin/SetupPage.php:83
+#: templates/admin/dashboard.php:29 templates/admin/setup.php:52
+msgid "Guided setup"
+msgstr "Geführte Einrichtung"
+
+#: src/Admin/StatusPage.php:42 templates/admin/dashboard.php:30
+#: templates/admin/status.php:45
+msgid "Status & verification"
+msgstr "Status und Überprüfung"
+
+#: src/Admin/StatusPage.php:43 templates/admin/proxy-health.php:25
+#: templates/admin/publish.php:56
+msgid "Status"
+msgstr "Status"
+
+#: src/Admin/StatusPage.php:61
+msgid "Unknown verification type."
+msgstr ""
+
+#: src/Api/ConsentController.php:118
+msgid "California controls are disabled."
+msgstr ""
+
+#: src/Api/ConsentController.php:121 src/Api/ConsentController.php:151
+msgid "Too many requests. Please try again shortly."
+msgstr ""
+
+#: src/Api/ConsentController.php:124
+msgid "This endpoint only accepts an opt-out."
+msgstr ""
+
+#: src/Api/ConsentController.php:157
+msgid "categories must be an object of category => bool."
+msgstr ""
+
+#: src/Consent/CaliforniaPolicy.php:22
+msgid "Unreviewed"
+msgstr ""
+
+#: src/Consent/CaliforniaPolicy.php:23
+msgid "Sale/sharing involved"
+msgstr ""
+
+#: src/Consent/CaliforniaPolicy.php:24
+msgid "No sale/sharing"
+msgstr ""
+
+#: src/Consent/CategoryRepository.php:37
+#: src/Integrations/MultilingualStrings.php:107
+msgid "Necessary"
+msgstr "Notwendig"
+
+#: src/Consent/CategoryRepository.php:38
+#: src/Integrations/MultilingualStrings.php:107
+msgid "Required for the website to function and cannot be disabled."
+msgstr "Für den Betrieb der Website erforderlich und nicht deaktivierbar."
+
+#: src/Consent/CategoryRepository.php:45
+#: src/Integrations/MultilingualStrings.php:108
+msgid "Functional"
+msgstr "Funktional"
+
+#: src/Consent/CategoryRepository.php:46
+#: src/Integrations/MultilingualStrings.php:108
+msgid ""
+"Enables enhanced functionality such as embedded content and preferences."
+msgstr "Ermöglicht zusätzliche Funktionen wie eingebettete Inhalte und gespeicherte Einstellungen."
+
+#: src/Consent/CategoryRepository.php:53
+#: src/Integrations/MultilingualStrings.php:109
+msgid "Analytics"
+msgstr "Statistik"
+
+#: src/Consent/CategoryRepository.php:54
+#: src/Integrations/MultilingualStrings.php:109
+msgid "Helps understand how visitors use the website."
+msgstr "Hilft uns zu verstehen, wie Besucher diese Website nutzen."
+
+#: src/Consent/CategoryRepository.php:61
+#: src/Integrations/MultilingualStrings.php:110
+msgid "Marketing"
+msgstr "Marketing"
+
+#: src/Consent/CategoryRepository.php:62
+#: src/Integrations/MultilingualStrings.php:110
+msgid "Used to track visitors for advertising purposes."
+msgstr "Wird verwendet, um Besucher für Werbezwecke zu erfassen."
+
+#. translators: 1: configuration version, 2: active services, 3: scripts
+#: src/Diagnostics/ConfigurationChecks.php:45
+#, php-format
+msgid "Published configuration v%1$d: %2$d active services, %3$d scripts"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:56
+msgid "Every active service is assigned to an existing category"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:61
+msgid "Active services are assigned to a category that does not exist"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:64
+msgid "These services point at a deleted or renamed category."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:65
+msgid ""
+"They are not listed in the banner, so visitors cannot see or allow them. "
+"They stay blocked."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:66
+msgid "Edit each service and choose an existing category, then publish."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:92
+msgid "Every script can be released by a consent choice"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:97
+msgid "Scripts can never run"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:100
+msgid ""
+"These scripts are assigned to a category that does not exist, or to a "
+"service that is inactive or missing."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:101
+msgid ""
+"No visitor choice can release them, so the integration silently does nothing."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:102
+msgid ""
+"Edit each script, pick an existing category and an active service, then "
+"publish."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:112
+msgid "Scripts are not assigned to a service"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:115
+msgid "These scripts are gated by category only."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:116
+msgid ""
+"The banner does not name the vendor behind them, and visitors can only allow "
+"them by allowing the whole category."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:117
+msgid ""
+"Assign each script to the service it belongs to (create a custom service if "
+"needed), then publish."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:128
+msgid "Scripts run without consent"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:131
+msgid ""
+"These scripts are in an always-active category, so they load for every "
+"visitor before any choice."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:132
+msgid ""
+"That is only appropriate for technology that is strictly necessary for the "
+"site to work."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:133
+msgid ""
+"Confirm each one is strictly necessary, or move it to an optional category."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:142
+msgid "Every active service has a purpose and a privacy policy link"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:147
+msgid "Active services are missing a purpose or privacy policy link"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:150
+msgid ""
+"The banner shows these services without a purpose description or without a "
+"link to the provider’s privacy policy."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:151
+msgid ""
+"Visitors get less information than they need to make a specific, informed "
+"choice."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:152
+msgid ""
+"Edit each service below, fill in its purpose and privacy policy URL, then "
+"publish. This check looks at the published configuration, so it clears after "
+"publishing."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:169
+msgid "Custom services have no domains or patterns"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:172
+msgid ""
+"No domain, script pattern, iframe pattern or managed script is linked to "
+"these services."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:173
+msgid ""
+"The plugin cannot recognise their markup, so it cannot block it "
+"automatically. The banner still lists them."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:174
+msgid ""
+"Add the vendor’s domains, or load the integration through Scripts and assign "
+"it to the service."
+msgstr ""
+
+#. translators: %s: script name
+#: src/Diagnostics/ConfigurationChecks.php:193
+#, php-format
+msgid "%s: script URL must be an absolute https:// URL"
+msgstr ""
+
+#. translators: %s: script name
+#: src/Diagnostics/ConfigurationChecks.php:198
+#, php-format
+msgid "%s: runtime host must be an absolute https:// origin"
+msgstr ""
+
+#. translators: %s: script name
+#: src/Diagnostics/ConfigurationChecks.php:205
+#, php-format
+msgid "%s: allowed runtime endpoints cannot be parsed"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:212
+msgid "Proxy configuration"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:212
+#: src/Diagnostics/StatusReport.php:190
+msgid "No published script uses the proxy"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:215
+msgid "Proxy configuration is valid"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:220
+msgid "Proxy configuration is invalid"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:223
+msgid "The proxy refuses to forward requests for these settings."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:224
+msgid ""
+"The affected integrations will fail to load or to send data once consent is "
+"given."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:225
+msgid "Correct the script settings, then publish and check Proxy diagnostics."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:234
+msgid "No duplicate managed scripts found"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:234
+#: src/Diagnostics/ConfigurationChecks.php:240
+msgid ""
+"Scripts managed by this plugin only; tags hard-coded in themes or other "
+"plugins are not compared"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:239
+msgid "Possible duplicate integrations"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:242
+msgid "Several scripts load the same URL or the same Google tag ID."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:243
+msgid "The vendor may count page views and events twice."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:244
+msgid "Keep one script per integration and delete or disable the others."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:251
+msgid "The banner links to a privacy or cookie policy"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:251
+#: src/Diagnostics/ConfigurationChecks.php:257
+msgid "Published policy pages"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:256
+msgid "The banner does not link to a privacy or cookie policy"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:259
+msgid ""
+"No published privacy policy page is selected, and no cookie policy page "
+"exists."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:260
+msgid ""
+"Visitors cannot reach your full privacy information from the consent banner."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:261
+msgid "Select your privacy policy page in the banner settings."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:270
+msgid "There are unpublished changes"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:271
+msgid "Draft configuration"
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:273
+msgid "Categories, services or scripts were changed but not published."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:274
+msgid ""
+"Visitors still see the published configuration. The checks on this page "
+"apply to the published configuration only."
+msgstr ""
+
+#: src/Diagnostics/ConfigurationChecks.php:275
+msgid "Review and publish, or discard the changes."
+msgstr ""
+
+#: src/Diagnostics/ProxyHealth.php:155
+msgid ""
+"Previously working proxy endpoints have failed at least three consecutive "
+"checks or observed requests:"
+msgstr ""
+
+#: src/Diagnostics/ProxyHealth.php:160
+msgid "Consentimental: proxy regression detected"
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:70
+msgid "California service review"
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:71
+msgid "Published service classifications and script assignments"
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:72
+msgid "Services or scripts still need review."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:73
+msgid ""
+"Unreviewed services and scripts without a service assignment are blocked "
+"while California controls are enabled."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:74
+msgid ""
+"Classify services, assign scripts to reviewed services, then publish and "
+"verify."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:110
+msgid "The site has not been scanned"
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:111
+msgid "No scan results"
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:114
+msgid "No scan has looked for tracking services on your pages."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:115
+msgid ""
+"Services that are on the site but not configured are blocked but never "
+"offered to visitors, and unknown vendors may load without consent."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:116
+msgid "Run a site scan and review the results."
+msgstr ""
+
+#. translators: %d: number of pages
+#: src/Diagnostics/StatusReport.php:123
+#, php-format
+msgid ""
+"%d published pages, as served to a logged-out visitor. Static HTML only: "
+"content added later by JavaScript, pages behind a login, and checkout steps "
+"are not seen."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:133
+msgid "The last scan is out of date"
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:136
+msgid "Themes, plugins and content may have changed since the last scan."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:137
+msgid "Newly added services would not be listed below."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:138
+msgid "Scan the site again."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:144
+msgid "Every service the scan detected is confirmed"
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:149
+msgid "Detected services are not confirmed"
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:152
+msgid ""
+"The scan found these services on your pages, but they are not active in the "
+"configuration."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:153
+msgid ""
+"They stay blocked, but the banner does not list them, so visitors cannot "
+"allow them and the site feature they provide will not work."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:154
+msgid ""
+"Confirm each service and its category, or remove it from your pages. Then "
+"publish."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:164 templates/admin/setup.php:197
+msgid "Unrecognized external hosts"
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:167
+msgid ""
+"Your pages load scripts, frames or images from these hosts, and no "
+"configured service matches them."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:168
+msgid ""
+"If any of them sets cookies or collects personal data, it loads before and "
+"regardless of consent."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:169
+msgid ""
+"For each host, decide whether it needs consent. If it does, create a service "
+"with its domain."
+msgstr ""
+
+#. translators: %d: number of endpoints
+#: src/Diagnostics/StatusReport.php:185
+#, php-format
+msgid ""
+"HTTP forwarding from this server to the vendor, %d endpoints. Does not show "
+"that browsers block trackers before consent, or that the vendor accepted the "
+"data."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:190
+msgid "Proxy availability"
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:207
+msgid "Proxy endpoints are failing"
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:210
+msgid "Three or more consecutive requests to these endpoints failed."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:211
+msgid ""
+"The affected integrations cannot load or send data, even for visitors who "
+"consented."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:212
+msgid ""
+"Open Proxy diagnostics for the error, check the vendor URL and your server’s "
+"outbound connectivity, then check again."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:225
+msgid "Some proxy endpoints have no recent successful check"
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:229
+msgid ""
+"These endpoints were never checked, have not been used in the last 24 hours, "
+"or just failed once."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:230
+msgid ""
+"Their availability is unknown. Runtime endpoints are only observed in real "
+"consented traffic."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:231
+msgid ""
+"Run a check from Proxy diagnostics, then allow the service in a browser to "
+"generate real traffic."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:237
+msgid "Proxy endpoints responded successfully in the last 24 hours"
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:248
+msgid "Consent enforcement in a browser"
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:248
+msgid "Data received by vendors"
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:250
+msgid ""
+"Manual check by an administrator. The plugin cannot observe visitors’ "
+"browsers from the server."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:251
+msgid ""
+"Manual check by an administrator in each vendor’s dashboard. The plugin "
+"cannot see whether a vendor accepted data."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:253
+msgid "Follow the browser verification steps and record the result."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:254
+msgid "Check each vendor’s dashboard or debug view and record the result."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:258
+msgid "No verification has been recorded."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:259
+msgid "Nothing on this page shows that this works for visitors."
+msgstr ""
+
+#. translators: 1: user login, 2: configuration version
+#: src/Diagnostics/StatusReport.php:265
+#, php-format
+msgid "Recorded by %1$s against configuration v%2$d."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:269
+msgid "The configuration has been published again since this was verified."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:270
+msgid "The earlier result does not cover the current services and categories."
+msgstr ""
+
+#. translators: %d: number of days
+#: src/Diagnostics/StatusReport.php:277
+#, php-format
+msgid "The last verification is more than %d days old."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:278
+msgid "Theme, plugin and vendor changes since then are not covered."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:284
+msgid "The administrator reported a problem."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:285
+msgid "Visitors’ choices may not be respected."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:285
+msgid "Data may be missing, or sent without consent."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:286
+msgid ""
+"Fix the problem, then verify again. The troubleshooting guide lists common "
+"causes."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:289
+msgid "Only some verification steps were confirmed."
+msgstr ""
+
+#: src/Diagnostics/StatusReport.php:290
+msgid "The unconfirmed steps remain unverified."
+msgstr ""
+
+#: src/Diagnostics/VerificationLog.php:35
+msgid ""
+"In a private window, before making any choice: the browser Network tab shows "
+"no requests to optional vendors, and no optional cookies or storage entries "
+"exist."
+msgstr ""
+
+#: src/Diagnostics/VerificationLog.php:36
+msgid ""
+"After “Reject all”, and after reloading: still no optional requests, cookies "
+"or storage entries."
+msgstr ""
+
+#: src/Diagnostics/VerificationLog.php:37
+msgid ""
+"After “Accept all”, or after allowing one service: that service’s scripts "
+"and embeds load, and nothing you did not allow loads."
+msgstr ""
+
+#: src/Diagnostics/VerificationLog.php:38
+msgid ""
+"After withdrawing through the privacy settings: the service stops (the page "
+"reloads if configured) and its cookies are removed."
+msgstr ""
+
+#: src/Diagnostics/VerificationLog.php:39
+msgid ""
+"The privacy settings can be reopened with the keyboard alone, on each page "
+"template you use."
+msgstr ""
+
+#: src/Diagnostics/VerificationLog.php:42
+msgid ""
+"After allowing the service, a test page view or event appeared in the "
+"vendor’s own dashboard or debug view."
+msgstr ""
+
+#: src/Diagnostics/VerificationLog.php:43
+msgid ""
+"A visit that rejected consent produced no page view or event in the vendor’s "
+"dashboard."
+msgstr ""
+
+#: src/Frontend/BannerContent.php:85 templates/admin/banner.php:107
+#: templates/admin/partials/banner-preview.php:43 templates/admin/setup.php:231
+msgid "We value your privacy"
+msgstr "Ihre Privatsphäre ist uns wichtig"
+
+#: src/Frontend/BannerContent.php:86 templates/admin/banner.php:113
+#: templates/admin/partials/banner-preview.php:44
+msgid ""
+"We use cookies and similar technologies for necessary site functionality "
+"and, with your consent, for functional, analytics and marketing purposes. "
+"You can change your choice at any time."
+msgstr "Wir verwenden Cookies und ähnliche Technologien für den Betrieb dieser Website und mit Ihrer Einwilligung für Funktionen, Statistik und Marketing. Sie können Ihre Entscheidung jederzeit ändern."
+
+#: src/Frontend/BannerContent.php:87 src/Frontend/Shortcodes.php:29
+#: src/functions.php:70
+msgid "Privacy settings"
+msgstr "Datenschutzeinstellungen"
+
+#: src/Frontend/BannerContent.php:88 templates/admin/banner.php:119
+msgid ""
+"Choose which categories of cookies and similar technologies you allow, or "
+"select individual services below each category for more specific control. "
+"Necessary technologies cannot be switched off as they are required for the "
+"site to work."
+msgstr "Wählen Sie aus, welche Kategorien von Cookies und ähnlichen Technologien Sie zulassen möchten. Sie können auch einzelne Dienste auswählen. Notwendige Technologien sind für den Betrieb der Website erforderlich und können nicht deaktiviert werden."
+
+#: src/Frontend/BannerContent.php:90
+msgid "Reject all"
+msgstr "Alle ablehnen"
+
+#: src/Frontend/BannerContent.php:91
+msgid "Customize"
+msgstr "Anpassen"
+
+#: src/Frontend/BannerContent.php:92
+msgid "Accept all"
+msgstr "Alle akzeptieren"
+
+#: src/Frontend/BannerContent.php:93
+msgid "Save settings"
+msgstr "Einstellungen speichern"
+
+#: src/Frontend/BannerContent.php:94
+msgid "Always active"
+msgstr "Immer aktiv"
+
+#: src/Frontend/BannerContent.php:103
+msgid "Do Not Sell or Share My Personal Information"
+msgstr "Meine personenbezogenen Daten nicht verkaufen oder weitergeben"
+
+#: src/Frontend/BannerContent.php:104
+msgid ""
+"You can opt out of sale or sharing for cross-context behavioral advertising. "
+"This choice is separate from cookie consent. Accepting cookies will not undo "
+"it."
+msgstr "Sie können dem Verkauf oder der Weitergabe Ihrer Daten für kontextübergreifende verhaltensbezogene Werbung widersprechen. Diese Entscheidung gilt unabhängig von Ihrer Cookie-Einwilligung. Die Annahme von Cookies hebt den Widerspruch nicht auf."
+
+#: src/Frontend/BannerContent.php:105
+msgid "Sale/sharing opt-out is active for this browser."
+msgstr "Der Widerspruch gegen Verkauf und Weitergabe ist für diesen Browser aktiv."
+
+#: src/Frontend/BannerContent.php:106
+msgid ""
+"Global Privacy Control detected. Sale/sharing opt-out is active for this "
+"browser."
+msgstr "Global Privacy Control erkannt. Der Widerspruch gegen Verkauf und Weitergabe ist für diesen Browser aktiv."
+
+#: src/Frontend/BannerContent.php:107
+msgid ""
+"Checking privacy signals. Affected services stay blocked until the check "
+"completes."
+msgstr "Datenschutzsignale werden geprüft. Betroffene Dienste bleiben bis zum Abschluss der Prüfung gesperrt."
+
+#: src/Frontend/BannerContent.php:108
+msgid ""
+"The server could not confirm your privacy choice. Affected services remain "
+"blocked in this browser. Retry or use the privacy rights request page for "
+"help."
+msgstr "Der Server konnte Ihre Datenschutzentscheidung nicht bestätigen. Betroffene Dienste bleiben in diesem Browser gesperrt. Versuchen Sie es erneut oder nutzen Sie die Seite für Datenschutzanfragen."
+
+#: src/Frontend/BannerContent.php:109
+msgid ""
+"Some services are unavailable because of your privacy choice or a pending "
+"service review."
+msgstr "Einige Dienste sind aufgrund Ihrer Datenschutzentscheidung oder einer ausstehenden Prüfung nicht verfügbar."
+
+#: src/Frontend/BannerContent.php:110
+msgid "Retry privacy request"
+msgstr "Datenschutzanfrage erneut senden"
+
+#: src/Frontend/BannerContent.php:132
+#: templates/admin/disclosure-snapshot.php:63
+#: templates/admin/partials/banner-preview.php:47 templates/admin/setup.php:255
+#: templates/frontend/services-table.php:27
+msgid "Privacy policy"
+msgstr "Datenschutzerklärung"
+
+#: src/Frontend/BannerContent.php:133
+msgid "Cookie policy"
+msgstr "Cookie-Richtlinie"
+
+#: src/Frontend/BannerContent.php:136
+msgid "Privacy rights requests"
+msgstr "Anfragen zu Datenschutzrechten"
+
+#. translators: 1: content provider name, 2: consent category label
+#: src/Frontend/BlockingAssets.php:45
+#, php-format
+msgid "This content is provided by %1$s and requires %2$s consent."
+msgstr "Dieser Inhalt wird von %1$s bereitgestellt und erfordert Ihre Einwilligung für %2$s."
+
+#. translators: %1$s: consent category label
+#: src/Frontend/BlockingAssets.php:47
+#, php-format
+msgid "This content requires %1$s consent."
+msgstr "Dieser Inhalt erfordert Ihre Einwilligung für %1$s."
+
+#: src/Frontend/BlockingAssets.php:48
+msgid "This content requires consent."
+msgstr "Dieser Inhalt erfordert Ihre Einwilligung."
+
+#: src/Frontend/BlockingAssets.php:49
+msgid ""
+"This service is unavailable because of your privacy choice or a pending "
+"privacy review. Open privacy settings for details."
+msgstr "Dieser Dienst ist aufgrund Ihrer Datenschutzentscheidung oder einer ausstehenden Prüfung nicht verfügbar. Weitere Informationen finden Sie in den Datenschutzeinstellungen."
+
+#: src/Frontend/BlockingAssets.php:50
+msgid ""
+"This content uses multiple services. Review and allow them in privacy "
+"settings to load it."
+msgstr "Dieser Inhalt verwendet mehrere Dienste. Prüfen und erlauben Sie diese in den Datenschutzeinstellungen, um den Inhalt zu laden."
+
+#. translators: %1$s: service name
+#: src/Frontend/BlockingAssets.php:52
+#, php-format
+msgid "Allow %1$s and load content"
+msgstr "%1$s erlauben und Inhalt laden"
+
+#. translators: %1$s: provider name
+#: src/Frontend/BlockingAssets.php:54
+#, php-format
+msgid ""
+"Allowing this service connects your browser to %1$s, sharing your IP address "
+"and potentially other data. Your choice applies to this service across this "
+"site until it expires or you withdraw it in privacy settings."
+msgstr "Wenn Sie diesen Dienst erlauben, verbindet sich Ihr Browser mit %1$s. Dabei werden Ihre IP-Adresse und möglicherweise weitere Daten übertragen. Ihre Entscheidung gilt auf der gesamten Website, bis sie abläuft oder Sie sie in den Datenschutzeinstellungen widerrufen."
+
+#: src/Frontend/BlockingAssets.php:55 templates/frontend/banner.php:213
+msgid "Open privacy settings"
+msgstr "Datenschutzeinstellungen öffnen"
+
+#. translators: %1$s: provider name, e.g. "Google"
+#: src/Frontend/BlockingAssets.php:57
+#, php-format
+msgid "%1$s privacy policy"
+msgstr "Datenschutzerklärung von %1$s"
+
+#: src/Integrations/GoogleServices.php:35
+msgid "Loads and manages other tracking and marketing tags."
+msgstr "Lädt und verwaltet weitere Tracking- und Marketing-Tags."
+
+#: src/Integrations/GoogleServices.php:67
+msgid "Measures website usage and traffic."
+msgstr "Erfasst die Nutzung und den Besucherverkehr der Website."
+
+#: src/Integrations/GoogleServices.php:77
+msgid "Distinguishes unique visitors."
+msgstr "Unterscheidet einzelne Besucher."
+
+#: src/Integrations/GoogleServices.php:78
+#: src/Integrations/GoogleServices.php:84
+#: src/Services/BuiltInServiceLibrary.php:83
+#: src/Services/BuiltInServiceLibrary.php:146
+msgid "2 years"
+msgstr "2 Jahre"
+
+#: src/Integrations/GoogleServices.php:83
+msgid "Persists session state for a specific GA4 property."
+msgstr "Speichert den Sitzungsstatus für eine bestimmte GA4-Property."
+
+#: src/Integrations/GoogleServices.php:94
+msgid "Tracks conversions and enables remarketing."
+msgstr "Erfasst Conversions und ermöglicht Remarketing."
+
+#: src/Integrations/GoogleServices.php:105
+msgid "Stores and tracks conversions."
+msgstr "Speichert und erfasst Conversions."
+
+#: src/Integrations/GoogleServices.php:106
+#: src/Services/BuiltInServiceLibrary.php:39
+#: src/Services/BuiltInServiceLibrary.php:40
+msgid "90 days"
+msgstr "90 Tage"
+
+#: src/Scripts/ScriptProxy.php:127
+msgid "Unknown or non-proxied script."
+msgstr ""
+
+#: src/Scripts/ScriptProxy.php:134
+msgid "Proxy path or method not allowed."
+msgstr ""
+
+#: src/Scripts/ScriptProxy.php:140
+msgid "This script has no valid upstream URL to proxy."
+msgstr ""
+
+#: src/Scripts/ScriptProxy.php:155
+msgid "Script query must match the configured URL."
+msgstr ""
+
+#: src/Scripts/ScriptProxy.php:158
+msgid "Proxy request too large."
+msgstr ""
+
+#: src/Scripts/ScriptProxy.php:180
+msgid "Proxy request limit reached."
+msgstr ""
+
+#: src/Scripts/ScriptProxy.php:211
+msgid "Upstream response too large."
+msgstr ""
+
+#: src/Scripts/ScriptProxy.php:215
+msgid "Configure the final upstream URL; proxy redirects are disabled."
+msgstr ""
+
+#: src/Scripts/ScriptProxy.php:219
+msgid "Upstream response type not allowed."
+msgstr ""
+
+#: src/Services/BuiltInServiceLibrary.php:34
+msgid "Tracks conversions and enables remarketing on Facebook/Instagram."
+msgstr "Erfasst Conversions und ermöglicht Remarketing auf Facebook und Instagram."
+
+#: src/Services/BuiltInServiceLibrary.php:39
+msgid "Identifies browsers for ad delivery."
+msgstr "Erkennt Browser für die Ausspielung von Werbung."
+
+#: src/Services/BuiltInServiceLibrary.php:40
+msgid "Stores the last Facebook ad click."
+msgstr "Speichert den letzten Klick auf eine Facebook-Anzeige."
+
+#: src/Services/BuiltInServiceLibrary.php:48
+msgid "Session recordings and heatmaps to analyse visitor behaviour."
+msgstr "Sitzungsaufzeichnungen und Heatmaps zur Analyse des Besucherverhaltens."
+
+#: src/Services/BuiltInServiceLibrary.php:53
+msgid "Persists the Clarity user id across visits."
+msgstr "Speichert die Clarity-Nutzerkennung über mehrere Besuche hinweg."
+
+#: src/Services/BuiltInServiceLibrary.php:53
+#: src/Services/BuiltInServiceLibrary.php:133
+#: src/Services/FirstPartyServices.php:67
+#: src/Services/FirstPartyServices.php:68
+msgid "1 year"
+msgstr "1 Jahr"
+
+#: src/Services/BuiltInServiceLibrary.php:54
+msgid "Connects page views into a single session recording."
+msgstr "Verknüpft Seitenaufrufe zu einer Sitzungsaufzeichnung."
+
+#: src/Services/BuiltInServiceLibrary.php:54
+msgid "1 day"
+msgstr "1 Tag"
+
+#: src/Services/BuiltInServiceLibrary.php:62
+msgid "Embeds and plays YouTube videos."
+msgstr "Bindet YouTube-Videos ein und spielt sie ab."
+
+#: src/Services/BuiltInServiceLibrary.php:68
+msgid "Estimates bandwidth for the video player."
+msgstr "Schätzt die verfügbare Bandbreite für den Videoplayer."
+
+#: src/Services/BuiltInServiceLibrary.php:68
+#: src/Services/BuiltInServiceLibrary.php:108
+msgid "6 months"
+msgstr "6 Monate"
+
+#: src/Services/BuiltInServiceLibrary.php:69
+msgid "Tracks embedded video views."
+msgstr "Erfasst Aufrufe eingebetteter Videos."
+
+#: src/Services/BuiltInServiceLibrary.php:69
+msgid "session"
+msgstr "Sitzung"
+
+#: src/Services/BuiltInServiceLibrary.php:77
+msgid "Embeds and plays Vimeo videos."
+msgstr "Bindet Vimeo-Videos ein und spielt sie ab."
+
+#: src/Services/BuiltInServiceLibrary.php:83
+msgid "Identifies the visitor across Vimeo embeds."
+msgstr "Erkennt Besucher über mehrere Vimeo-Einbettungen hinweg."
+
+#: src/Services/BuiltInServiceLibrary.php:91
+msgid "Embeds interactive maps."
+msgstr "Bindet interaktive Karten ein."
+
+#: src/Services/BuiltInServiceLibrary.php:102
+msgid "Protects forms from spam and abuse."
+msgstr "Schützt Formulare vor Spam und Missbrauch."
+
+#: src/Services/BuiltInServiceLibrary.php:108
+msgid "Distinguishes humans from bots."
+msgstr "Unterscheidet Menschen von Bots."
+
+#: src/Services/BuiltInServiceLibrary.php:116
+msgid "Protects forms from spam and abuse without tracking cookies."
+msgstr "Schützt Formulare vor Spam und Missbrauch, ohne Tracking-Cookies zu verwenden."
+
+#: src/Services/BuiltInServiceLibrary.php:127
+msgid "Session recordings, heatmaps and on-site surveys."
+msgstr "Sitzungsaufzeichnungen, Heatmaps und Umfragen auf der Website."
+
+#: src/Services/BuiltInServiceLibrary.php:132
+msgid "Holds the current Hotjar session state."
+msgstr "Speichert den Status der aktuellen Hotjar-Sitzung."
+
+#: src/Services/BuiltInServiceLibrary.php:132
+#: src/Services/BuiltInServiceLibrary.php:175
+msgid "30 minutes"
+msgstr "30 Minuten"
+
+#: src/Services/BuiltInServiceLibrary.php:133
+#: src/Services/BuiltInServiceLibrary.php:174
+msgid "Identifies the visitor across sessions."
+msgstr "Erkennt Besucher über mehrere Sitzungen hinweg."
+
+#: src/Services/BuiltInServiceLibrary.php:141
+msgid "Tracks conversions and enables retargeting on LinkedIn."
+msgstr "Erfasst Conversions und ermöglicht Retargeting auf LinkedIn."
+
+#: src/Services/BuiltInServiceLibrary.php:146
+msgid "Identifies the browser for LinkedIn ads."
+msgstr "Erkennt den Browser für LinkedIn-Werbung."
+
+#: src/Services/BuiltInServiceLibrary.php:147
+msgid "LinkedIn Ads retargeting."
+msgstr "Retargeting mit LinkedIn Ads."
+
+#: src/Services/BuiltInServiceLibrary.php:147
+msgid "30 days"
+msgstr "30 Tage"
+
+#: src/Services/BuiltInServiceLibrary.php:155
+msgid "Tracks conversions and enables retargeting on TikTok."
+msgstr "Erfasst Conversions und ermöglicht Retargeting auf TikTok."
+
+#: src/Services/BuiltInServiceLibrary.php:160
+msgid "Identifies the browser for TikTok ads."
+msgstr "Erkennt den Browser für TikTok-Werbung."
+
+#: src/Services/BuiltInServiceLibrary.php:160
+#: src/Services/BuiltInServiceLibrary.php:174
+msgid "13 months"
+msgstr "13 Monate"
+
+#: src/Services/BuiltInServiceLibrary.php:167
+msgid "Self-hosted"
+msgstr "Selbst gehostet"
+
+#: src/Services/BuiltInServiceLibrary.php:168
+msgid ""
+"Measures website usage and traffic on infrastructure the site operator "
+"controls."
+msgstr "Erfasst die Nutzung und den Besucherverkehr der Website auf Infrastruktur, die vom Betreiber kontrolliert wird."
+
+#: src/Services/BuiltInServiceLibrary.php:175
+msgid "Holds the current Matomo session state."
+msgstr "Speichert den Status der aktuellen Matomo-Sitzung."
+
+#: src/Services/FirstPartyServices.php:36
+msgid "This website"
+msgstr "Diese Website"
+
+#: src/Services/FirstPartyServices.php:42
+msgid "Consent settings"
+msgstr "Einwilligungseinstellungen"
+
+#: src/Services/FirstPartyServices.php:44
+msgid ""
+"Remembers your cookie and privacy choices on this site, so they are "
+"respected on every page and you are not asked again on each visit."
+msgstr "Speichert Ihre Cookie- und Datenschutzentscheidungen, damit sie auf allen Seiten berücksichtigt werden und Sie nicht bei jedem Besuch erneut gefragt werden."
+
+#. translators: %d: number of days
+#: src/Services/FirstPartyServices.php:49
+msgid ""
+"Stores your consent choices, an anonymous consent ID and when you made the "
+"choice."
+msgstr "Speichert Ihre Einwilligungsentscheidungen, eine anonyme Einwilligungs-ID und den Zeitpunkt Ihrer Entscheidung."
+
+#. translators: %d: number of days
+#: src/Services/FirstPartyServices.php:49
+#, php-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d Tag"
+msgstr[1] "%d Tage"
+
+#: src/Services/FirstPartyServices.php:50
+msgid ""
+"Remembers a sale/sharing opt-out independently of cookie consent. Set when "
+"California controls are enabled."
+msgstr "Speichert einen Widerspruch gegen Verkauf und Weitergabe unabhängig von der Cookie-Einwilligung. Wird gesetzt, wenn die Kalifornien-Einstellungen aktiviert sind."
+
+#: src/Services/FirstPartyServices.php:50
+msgid "400 days, renewed on visits"
+msgstr "400 Tage, bei Besuchen erneuert"
+
+#: src/Services/FirstPartyServices.php:58
+msgid "WordPress"
+msgstr "WordPress"
+
+#: src/Services/FirstPartyServices.php:60
+msgid ""
+"The software this site runs on. Sets cookies only for people who log in, and "
+"to remember access to password-protected content."
+msgstr "Die Software, auf der diese Website läuft. Setzt Cookies für angemeldete Nutzer und speichert den Zugang zu passwortgeschützten Inhalten."
+
+#: src/Services/FirstPartyServices.php:64
+msgid "Keeps a logged-in user signed in. Only for users who log in."
+msgstr "Hält angemeldete Nutzer eingeloggt. Nur für Nutzer, die sich anmelden."
+
+#: src/Services/FirstPartyServices.php:64
+#: src/Services/FirstPartyServices.php:65
+msgid "Session, or 14 days with “Remember me”"
+msgstr "Sitzung oder 14 Tage mit „Angemeldet bleiben“"
+
+#: src/Services/FirstPartyServices.php:65
+msgid "Secure sign-in to the administration area. Only for users who log in."
+msgstr "Sichert die Anmeldung im Administrationsbereich. Nur für Nutzer, die sich anmelden."
+
+#: src/Services/FirstPartyServices.php:66
+msgid "Checks on the login page that the browser accepts cookies."
+msgstr "Prüft auf der Anmeldeseite, ob der Browser Cookies akzeptiert."
+
+#: src/Services/FirstPartyServices.php:66
+#: src/Services/FirstPartyServices.php:70
+msgid "Session"
+msgstr "Sitzung"
+
+#: src/Services/FirstPartyServices.php:67
+msgid "Stores administration screen preferences of a logged-in user."
+msgstr "Speichert Einstellungen für den Administrationsbereich eines angemeldeten Nutzers."
+
+#: src/Services/FirstPartyServices.php:68
+msgid "Records when those preferences were last saved."
+msgstr "Speichert, wann diese Einstellungen zuletzt geändert wurden."
+
+#: src/Services/FirstPartyServices.php:69
+msgid "Remembers that you entered the password of a protected page or post."
+msgstr "Speichert, dass Sie das Passwort für eine geschützte Seite oder einen geschützten Beitrag eingegeben haben."
+
+#: src/Services/FirstPartyServices.php:69
+msgid "10 days"
+msgstr "10 Tage"
+
+#: src/Services/FirstPartyServices.php:70
+msgid "Remembers the language chosen on the login page."
+msgstr "Speichert die auf der Anmeldeseite gewählte Sprache."
+
+#: src/Services/FirstPartyServices.php:79
+msgid "WordPress comments"
+msgstr "WordPress-Kommentare"
+
+#: src/Services/FirstPartyServices.php:81
+msgid ""
+"Remembers your name, email address and website for your next comment. Only "
+"set when you tick “Save my name, email, and website in this browser for the "
+"next time I comment.”"
+msgstr "Speichert Ihren Namen, Ihre E-Mail-Adresse und Ihre Website für den nächsten Kommentar. Wird nur gesetzt, wenn Sie die entsprechende Option im Kommentarformular auswählen."
+
+#: src/Services/FirstPartyServices.php:85
+msgid "Your name, as entered in the comment form."
+msgstr "Ihr Name, wie im Kommentarformular eingegeben."
+
+#: src/Services/FirstPartyServices.php:85
+#: src/Services/FirstPartyServices.php:86
+#: src/Services/FirstPartyServices.php:87
+msgid "347 days"
+msgstr "347 Tage"
+
+#: src/Services/FirstPartyServices.php:86
+msgid "Your email address, as entered in the comment form."
+msgstr "Ihre E-Mail-Adresse, wie im Kommentarformular eingegeben."
+
+#: src/Services/FirstPartyServices.php:87
+msgid "Your website, as entered in the comment form."
+msgstr "Ihre Website, wie im Kommentarformular eingegeben."
+
+#: templates/admin/banner.php:66 templates/admin/categories.php:21
+#: templates/admin/consent-log.php:34 templates/admin/scanner.php:35
+#: templates/admin/scripts.php:25 templates/admin/services.php:31
+msgid "Saved."
+msgstr "Gespeichert."
+
+#: templates/admin/banner.php:70
+msgid "Leave a field blank to use the plugin's built-in default."
+msgstr ""
+
+#: templates/admin/banner.php:77
+msgid "Wording"
+msgstr ""
+
+#: templates/admin/banner.php:80
+msgid "Logo"
+msgstr ""
+
+#: templates/admin/banner.php:91
+msgid "Choose logo"
+msgstr ""
+
+#: templates/admin/banner.php:94
+msgid "Remove logo"
+msgstr ""
+
+#: templates/admin/banner.php:97
+msgid ""
+"Optional. Shown at the top of the banner and the privacy settings dialog."
+msgstr ""
+
+#: templates/admin/banner.php:99
+msgid "Width"
+msgstr ""
+
+#: templates/admin/banner.php:105 templates/admin/setup.php:230
+msgid "Banner title"
+msgstr ""
+
+#: templates/admin/banner.php:111 templates/admin/setup.php:234
+msgid "Banner text"
+msgstr ""
+
+#: templates/admin/banner.php:117
+msgid "Customize dialog text"
+msgstr ""
+
+#: templates/admin/banner.php:123
+msgid "Floating button icon"
+msgstr ""
+
+#: templates/admin/banner.php:127
+msgid "Cookie"
+msgstr ""
+
+#: templates/admin/banner.php:128
+msgid "Fingerprint"
+msgstr ""
+
+#: templates/admin/banner.php:129
+msgid "Gear"
+msgstr ""
+
+#: templates/admin/banner.php:130
+msgid "Custom emoji"
+msgstr ""
+
+#: templates/admin/banner.php:131
+msgid "Custom image"
+msgstr ""
+
+#: templates/admin/banner.php:148
+msgid "Any single emoji or short text."
+msgstr ""
+
+#: templates/admin/banner.php:161
+msgid "Choose image"
+msgstr ""
+
+#: templates/admin/banner.php:164
+msgid "Remove image"
+msgstr ""
+
+#: templates/admin/banner.php:167
+msgid ""
+"PNG, JPG, WebP, or SVG (SVG only appears here if your site already allows "
+"SVG uploads). Shown at 24×24px, so a square image works best."
+msgstr ""
+
+#: templates/admin/banner.php
+msgid "Desktop"
+msgstr "Desktop"
+
+#: templates/admin/banner.php
+msgid "Mobile (600px and narrower)"
+msgstr "Mobil (600 px und schmaler)"
+
+#: templates/admin/banner.php
+msgid "Floating button position — %s"
+msgstr "Position der schwebenden Schaltfläche — %s"
+
+#: templates/admin/banner.php
+msgid "Side"
+msgstr "Seite"
+
+#: templates/admin/banner.php
+msgid "Right"
+msgstr "Rechts"
+
+#: templates/admin/banner.php
+msgid "Left"
+msgstr "Links"
+
+#: templates/admin/banner.php
+msgid "Distance from selected side"
+msgstr "Abstand zur gewählten Seite"
+
+#: templates/admin/banner.php
+msgid "Distance from bottom"
+msgstr "Abstand vom unteren Rand"
+
+#: templates/admin/banner.php:173
+msgid "Appearance"
+msgstr ""
+
+#: templates/admin/banner.php:176
+msgid "Background"
+msgstr ""
+
+#: templates/admin/banner.php:177 templates/admin/disclosure-snapshot.php:40
+msgid "Text"
+msgstr ""
+
+#: templates/admin/banner.php:178
+msgid "Muted text"
+msgstr ""
+
+#: templates/admin/banner.php:179
+msgid "Border"
+msgstr ""
+
+#: templates/admin/banner.php:180
+msgid "Primary button background"
+msgstr ""
+
+#: templates/admin/banner.php:181
+msgid "Primary button text"
+msgstr ""
+
+#: templates/admin/banner.php:182
+msgid "Focus outline"
+msgstr ""
+
+#: templates/admin/banner.php:185
+msgid "Position"
+msgstr ""
+
+#: templates/admin/banner.php:188
+msgid "Bottom bar"
+msgstr ""
+
+#: templates/admin/banner.php:189
+msgid "Top bar"
+msgstr ""
+
+#: templates/admin/banner.php:190
+msgid "Centered modal"
+msgstr ""
+
+#: templates/admin/banner.php:195
+msgid "Corner radius"
+msgstr ""
+
+#: templates/admin/banner.php:201
+msgid "Button shape"
+msgstr ""
+
+#: templates/admin/banner.php:204
+msgid "Rounded (matches corner radius)"
+msgstr ""
+
+#: templates/admin/banner.php:205
+msgid "Pill"
+msgstr ""
+
+#: templates/admin/banner.php:206
+msgid "Square"
+msgstr ""
+
+#: templates/admin/banner.php:211
+msgid "Font family"
+msgstr ""
+
+#: templates/admin/banner.php:214
+msgid ""
+"Any valid CSS font-family value. Leave blank to match the site's default UI "
+"font stack."
+msgstr ""
+
+#: templates/admin/banner.php:218
+msgid "Font size"
+msgstr ""
+
+#: templates/admin/banner.php:224
+msgid "Custom CSS"
+msgstr ""
+
+#: templates/admin/banner.php:226
+msgid ".cmp-banner__panel { ... }"
+msgstr ""
+
+#: templates/admin/banner.php:227
+msgid ""
+"Raw CSS, applied after everything above (and after this preview's own "
+"styles) — so it can override any of it. Only available to administrators."
+msgstr ""
+
+#: templates/admin/banner.php:234 templates/admin/consent-log.php:63
+#: templates/admin/dashboard.php:123 templates/admin/dashboard.php:194
+#: templates/admin/script-form.php:158 templates/admin/service-form.php:104
+#: templates/admin/service-override-form.php:123
+msgid "Save"
+msgstr "Speichern"
+
+#: templates/admin/banner.php:285
+msgid "Choose a logo"
+msgstr ""
+
+#: templates/admin/banner.php:286
+msgid "Choose an icon image"
+msgstr ""
+
+#: templates/admin/categories.php:25
+msgid ""
+"This adds or removes a category, which counts as a meaningful change: once "
+"published, visitors who already consented will be asked to decide again on "
+"their next visit. Nothing changes for visitors until you publish this change."
+msgstr ""
+
+#: templates/admin/categories.php:30
+msgid ""
+"Necessary, Functional, Analytics and Marketing cannot be deleted — every "
+"built-in service is registered against one of these. Their order, label and "
+"description can still be changed. Adding or removing a category asks "
+"visitors to make a new consent decision; renaming or re-describing one does "
+"not."
+msgstr ""
+
+#: templates/admin/categories.php:38
+msgid "Order"
+msgstr ""
+
+#: templates/admin/categories.php:39 templates/admin/categories.php:110
+#: templates/admin/dashboard.php:132
+msgid "Label"
+msgstr ""
+
+#: templates/admin/categories.php:40 templates/admin/categories.php:103
+#: templates/admin/dashboard.php:133
+msgid "Slug"
+msgstr ""
+
+#: templates/admin/categories.php:41 templates/admin/categories.php:114
+msgid "Description"
+msgstr "Beschreibung"
+
+#: templates/admin/categories.php:42 templates/admin/dashboard.php:134
+msgid "Required"
+msgstr ""
+
+#: templates/admin/categories.php:43 templates/admin/scripts.php:48
+#: templates/admin/services.php:74
+msgid "Actions"
+msgstr ""
+
+#: templates/admin/categories.php:71 templates/admin/scripts.php:78
+#: templates/admin/services.php:122
+msgid "Delete"
+msgstr "Löschen"
+
+#: templates/admin/categories.php:83
+msgid "Save order & details"
+msgstr ""
+
+#: templates/admin/categories.php:90
+msgid "Delete this category? Any service assigned to it will need reassigning."
+msgstr ""
+
+#: templates/admin/categories.php:98 templates/admin/categories.php:120
+msgid "Add category"
+msgstr ""
+
+#: templates/admin/categories.php:106
+msgid ""
+"Lowercase letters, numbers, dashes and underscores only — this is the "
+"identifier services register against, and cannot be changed later."
+msgstr ""
+
+#: templates/admin/consent-log.php:26
+msgid ""
+"Every recorded consent decision, newest first. Each visitor is identified "
+"only by their anonymous consent_id (the value in their cmp_consent cookie) — "
+"search for one to see its full history and prove what was agreed to and when."
+msgstr ""
+
+#: templates/admin/consent-log.php:30
+msgid ""
+"This is a record of what the visitor’s own browser reported, over an "
+"anonymous, unauthenticated endpoint by design (no account or login is "
+"required to give or withdraw consent). Treat it as the visitor’s self-"
+"reported assertion, not cryptographically authenticated evidence — the same "
+"caveat that applies to any cookie-based consent record, on any CMP."
+msgstr ""
+
+#: templates/admin/consent-log.php:41
+msgid "Record consent decisions"
+msgstr ""
+
+#: templates/admin/consent-log.php:45
+msgid ""
+"Keep a server-side record of each consent decision, for proof of consent"
+msgstr ""
+
+#: templates/admin/consent-log.php:48
+msgid ""
+"Off by default would mean no way to prove consent later if ever asked — this "
+"plugin keeps it on by default, but it’s never mandatory: turn it off if this "
+"site has no need to demonstrate consent after the fact."
+msgstr ""
+
+#: templates/admin/consent-log.php:53
+msgid "Retention"
+msgstr ""
+
+#: templates/admin/consent-log.php:56 templates/admin/dashboard.php:73
+msgid "days"
+msgstr ""
+
+#: templates/admin/consent-log.php:57
+msgid ""
+"Records older than this are deleted by a daily WordPress cron job. "
+"Disclosure snapshots are kept while any retained record references them; "
+"unreferenced snapshots older than this are deleted too, except the newest "
+"one per language. Disabling recording or deactivating the plugin deletes "
+"nothing."
+msgstr ""
+
+#: templates/admin/consent-log.php:69
+msgid ""
+"Recording is currently off — no new decisions are being logged. Existing "
+"records below are unaffected."
+msgstr ""
+
+#: templates/admin/consent-log.php:75
+msgid "Search by consent ID"
+msgstr ""
+
+#: templates/admin/consent-log.php:76
+msgid "consent_id…"
+msgstr ""
+
+#: templates/admin/consent-log.php:77
+msgid "Search"
+msgstr ""
+
+#: templates/admin/consent-log.php:79
+msgid "Clear"
+msgstr ""
+
+#: templates/admin/consent-log.php:86
+msgid "Export these records (CSV)"
+msgstr ""
+
+#: templates/admin/consent-log.php:86
+msgid "Export all records (CSV)"
+msgstr ""
+
+#: templates/admin/consent-log.php:87
+msgid "Export with disclosure snapshots (JSON)"
+msgstr ""
+
+#: templates/admin/consent-log.php:91
+msgid "Records deleted."
+msgstr ""
+
+#: templates/admin/consent-log.php:95
+msgid "No consent records found."
+msgstr ""
+
+#: templates/admin/consent-log.php:98
+msgid ""
+"Permanently delete every record for this consent ID? This cannot be undone, "
+"and should only be done to fulfil a visitor's erasure request — it removes "
+"your ability to prove what this visitor consented to."
+msgstr ""
+
+#: templates/admin/consent-log.php:102
+msgid "Delete all records for this consent ID (right to erasure)"
+msgstr ""
+
+#: templates/admin/consent-log.php:109
+msgid "Recorded (UTC)"
+msgstr ""
+
+#: templates/admin/consent-log.php:110
+msgid "Consent ID"
+msgstr ""
+
+#: templates/admin/consent-log.php:111 templates/admin/scanner.php:75
+#: templates/admin/scanner.php:120
+msgid "Action"
+msgstr ""
+
+#: templates/admin/consent-log.php:113 templates/admin/consent-log.php:189
+#: templates/admin/status.php:81 templates/admin/status.php:92
+msgid "Config v."
+msgstr ""
+
+#: templates/admin/consent-log.php:114
+msgid "Disclosure shown"
+msgstr ""
+
+#: templates/admin/consent-log.php:115
+msgid "IP (anonymized)"
+msgstr ""
+
+#: templates/admin/consent-log.php:116
+msgid "Page"
+msgstr ""
+
+#: templates/admin/consent-log.php:143
+msgid "Unknown"
+msgstr ""
+
+#. translators: 1: current page, 2: total pages
+#: templates/admin/consent-log.php:164
+#, php-format
+msgid "Page %1$d of %2$d"
+msgstr ""
+
+#: templates/admin/consent-log.php:171
+msgid "Previous"
+msgstr ""
+
+#: templates/admin/consent-log.php:174
+msgid "Next"
+msgstr ""
+
+#: templates/admin/consent-log.php:180
+msgid "Disclosure snapshots"
+msgstr ""
+
+#: templates/admin/consent-log.php:181
+msgid ""
+"Each snapshot is an immutable copy of what the banner disclosed: wording, "
+"buttons, categories, services, purposes, policy links and language. A new "
+"one is stored whenever any of that changes, including a changed translation. "
+"Records made before snapshots existed show \"Unknown\"; they are not "
+"reconstructed from current settings."
+msgstr ""
+
+#: templates/admin/consent-log.php:183
+msgid ""
+"No snapshots stored yet. One is stored when configuration is published, when "
+"banner settings change, and when the banner is first shown in a language."
+msgstr ""
+
+#: templates/admin/consent-log.php:188
+msgid "Snapshot"
+msgstr ""
+
+#: templates/admin/consent-log.php:190
+#: templates/admin/disclosure-snapshot.php:34
+msgid "Language"
+msgstr ""
+
+#: templates/admin/consent-log.php:191
+msgid "First stored"
+msgstr ""
+
+#: templates/admin/consent-log.php:192
+#: templates/admin/disclosure-snapshot.php:33
+msgid "Captured (UTC)"
+msgstr ""
+
+#: templates/admin/dashboard.php:26
+msgid ""
+"Known services are recognised by domain and URL pattern and blocked until "
+"consent. Recognition only covers services the plugin knows about, and a "
+"service is only offered to visitors once you confirm it is in use."
+msgstr ""
+
+#: templates/admin/dashboard.php:33
+msgid "Legal framework"
+msgstr ""
+
+#: templates/admin/dashboard.php:36
+msgid "Consent profile for all visitors"
+msgstr ""
+
+#: templates/admin/dashboard.php:38
+msgid "Custom (no legal profile)"
+msgstr ""
+
+#: templates/admin/dashboard.php:39
+msgid "EU / Germany — GDPR and TDDDG consent safeguards"
+msgstr ""
+
+#: templates/admin/dashboard.php:41
+msgid ""
+"The EU / Germany profile enforces Basic Consent Mode, a visible privacy "
+"settings button, browsing before a decision, reload on script withdrawal, "
+"and explicit choices for optional services. Only the Necessary category can "
+"be required; all other categories start unchecked. These safeguards apply "
+"worldwide without geolocation."
+msgstr ""
+
+#: templates/admin/dashboard.php:42
+msgid ""
+"Choose the applicable framework with your legal adviser. This profile covers "
+"consent controls, not complete legal compliance. California sale/sharing "
+"controls can be enabled separately below. Review which services are "
+"genuinely necessary, provider disclosures and international transfers. "
+"Unknown integrations still need configuration and browser verification."
+msgstr ""
+
+#: templates/admin/dashboard.php:43
+msgid ""
+"Saving a different profile takes effect immediately and asks visitors to "
+"decide again. Purge any external page caches. Profile rules override "
+"conflicting settings below while selected."
+msgstr ""
+
+#: templates/admin/dashboard.php:44
+msgid "Save framework"
+msgstr ""
+
+#: templates/admin/dashboard.php:47
+msgid "California sale/sharing controls"
+msgstr ""
+
+#: templates/admin/dashboard.php:50
+msgid "Enable California sale/sharing controls for all visitors"
+msgstr ""
+
+#: templates/admin/dashboard.php:51
+msgid ""
+"Adds a sale/sharing opt-out and honors Global Privacy Control alongside your "
+"consent baseline. Basic Consent Mode, a visible settings button, browsing "
+"before a decision, and script-withdrawal reloads are enforced. Unreviewed "
+"services and managed elements without a service assignment remain blocked, "
+"including after Accept all."
+msgstr ""
+
+#: templates/admin/dashboard.php:52
+#, php-format
+msgid "%d active services still need sale/sharing classification."
+msgstr ""
+
+#: templates/admin/dashboard.php:55
+msgid "Privacy rights request page"
+msgstr ""
+
+#: templates/admin/dashboard.php:56
+msgid "None selected"
+msgstr ""
+
+#: templates/admin/dashboard.php:57
+msgid ""
+"Link to your process for access, deletion and correction requests. Backend "
+"transfers and account-wide preferences require integration with your "
+"systems. These controls do not establish complete CCPA compliance."
+msgstr ""
+
+#: templates/admin/dashboard.php:58
+msgid ""
+"Changes take effect immediately and renew cookie consent without clearing "
+"sale/sharing opt-outs. Service classifications are staged separately: review "
+"and publish them. Exclude the privacy-choice REST endpoint from caching and "
+"purge external page caches."
+msgstr ""
+
+#: templates/admin/dashboard.php:59
+msgid "Save California controls"
+msgstr ""
+
+#: templates/admin/dashboard.php:62
+msgid "General settings"
+msgstr ""
+
+#: templates/admin/dashboard.php:64
+msgid "The enabled privacy controls enforce the disabled settings below."
+msgstr ""
+
+#: templates/admin/dashboard.php:70
+msgid "Consent expiry"
+msgstr ""
+
+#: templates/admin/dashboard.php:74
+msgid "After this many days, a visitor is asked to decide again."
+msgstr ""
+
+#: templates/admin/dashboard.php:78
+msgid "Floating button"
+msgstr ""
+
+#: templates/admin/dashboard.php:82
+msgid "Show a floating button to reopen privacy settings"
+msgstr ""
+
+#: templates/admin/dashboard.php:87
+msgid "Before a decision is made"
+msgstr ""
+
+#: templates/admin/dashboard.php:91
+msgid ""
+"Dim and block the rest of the page until the visitor accepts, rejects, or "
+"customizes"
+msgstr ""
+
+#: templates/admin/dashboard.php:94
+msgid ""
+"When off, the banner still appears and nothing consent-dependent loads "
+"either way, but the visitor can read and interact with the rest of the page "
+"immediately — relevant if you want to avoid anything resembling a \"cookie "
+"wall\". The Customize dialog itself still dims the page when open, since "
+"that is a dialog the visitor opened on purpose."
+msgstr ""
+
+#: templates/admin/dashboard.php:99
+msgid "On withdrawal"
+msgstr ""
+
+#: templates/admin/dashboard.php:103
+msgid ""
+"Reload the page if withdrawing consent revoked something that had already "
+"started running"
+msgstr ""
+
+#: templates/admin/dashboard.php:106
+msgid ""
+"Cookies/storage are cleaned up and embeds are re-blocked either way. A "
+"script that already executed may keep timers or connections running until "
+"the page reloads. Reload is enabled by default and only happens if an "
+"affected script had actually run."
+msgstr ""
+
+#: templates/admin/dashboard.php:111
+msgid "When the plugin is deleted"
+msgstr ""
+
+#: templates/admin/dashboard.php:115
+msgid ""
+"Delete all plugin data, including the consent log and disclosure snapshots"
+msgstr ""
+
+#: templates/admin/dashboard.php:117
+msgid ""
+"Off by default, because consent records may be needed as evidence. "
+"Deactivating the plugin never deletes data. Export the consent log first if "
+"you might need it."
+msgstr ""
+
+#: templates/admin/dashboard.php:135
+msgid "Default enabled"
+msgstr ""
+
+#: templates/admin/dashboard.php:143 templates/admin/dashboard.php:144
+msgid "Yes"
+msgstr ""
+
+#: templates/admin/dashboard.php:143 templates/admin/dashboard.php:144
+msgid "No"
+msgstr ""
+
+#: templates/admin/dashboard.php:152
+msgid "No services registered yet."
+msgstr ""
+
+#: templates/admin/dashboard.php:157 templates/admin/script-form.php:34
+#: templates/admin/scripts.php:43 templates/admin/service-form.php:48
+#: templates/admin/services.php:68
+msgid "Name"
+msgstr "Name"
+
+#: templates/admin/dashboard.php:158 templates/admin/scanner.php:73
+#: templates/admin/scripts.php:46 templates/admin/service-form.php:60
+#: templates/admin/service-override-form.php:68 templates/admin/services.php:69
+#: templates/admin/setup.php:140 templates/admin/setup.php:165
+#: templates/frontend/services-table.php:24
+msgid "Category"
+msgstr "Kategorie"
+
+#: templates/admin/dashboard.php:159 templates/admin/disclosure-snapshot.php:63
+#: templates/admin/service-form.php:52
+#: templates/admin/service-override-form.php:47 templates/admin/services.php:70
+#: templates/frontend/services-table.php:22
+msgid "Provider"
+msgstr "Anbieter"
+
+#: templates/admin/dashboard.php:174 templates/frontend/debug-panel.php:39
+msgid "Google Consent Mode"
+msgstr "Google Consent Mode"
+
+#: templates/admin/dashboard.php:178
+msgid "Consent Mode type"
+msgstr ""
+
+#: templates/admin/dashboard.php:181
+msgid "Basic"
+msgstr ""
+
+#: templates/admin/dashboard.php:183
+msgid ""
+"Google Tag Manager itself does not load until consent exists. No request of "
+"any kind reaches Google before that."
+msgstr ""
+
+#: templates/admin/dashboard.php:187
+msgid "Advanced"
+msgstr ""
+
+#: templates/admin/dashboard.php:189
+msgid ""
+"Google Tag Manager loads immediately under Consent Mode defaults. Google "
+"tags may send cookieless pings to Google before consent exists — this is "
+"different from complete blocking."
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:19
+msgid "Disclosure snapshot"
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:20
+msgid "Back to consent log"
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:23
+msgid ""
+"No snapshot with this identifier is stored. It may have been removed by "
+"retention, or never existed."
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:27
+msgid ""
+"The stored content no longer matches its identifier. It has been modified "
+"outside this plugin and should not be relied on."
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:30
+msgid "Identifier (SHA-256)"
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:31
+msgid "Configuration version"
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:32
+msgid "Configuration published (UTC)"
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:32
+msgid "Unknown — published before version history was recorded"
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:39
+msgid "Title"
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:41
+msgid "Settings dialog title"
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:42
+msgid "Settings dialog text"
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:43
+msgid "Choice labels"
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:44
+msgid "Policy links"
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:47
+msgid "None shown"
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:56
+msgid "Categories and services"
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:58
+msgid "always active"
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:63 templates/admin/scanner.php:72
+#: templates/frontend/services-table.php:21
+msgid "Service"
+msgstr "Dienst"
+
+#: templates/admin/disclosure-snapshot.php:63
+#: templates/admin/service-form.php:56
+#: templates/admin/service-override-form.php:91
+#: templates/frontend/services-table.php:23
+msgid "Purpose"
+msgstr "Zweck"
+
+#: templates/admin/disclosure-snapshot.php:63
+#: templates/admin/service-form.php:94 templates/admin/services.php:73
+#: templates/frontend/services-table.php:25
+msgid "Cookies"
+msgstr "Cookies"
+
+#: templates/admin/disclosure-snapshot.php:79
+msgid "Terms"
+msgstr ""
+
+#. translators: 1: number of days, 2: basic|advanced
+#: templates/admin/disclosure-snapshot.php:84
+#, php-format
+msgid "Decision valid for %1$d days. Google Consent Mode: %2$s."
+msgstr ""
+
+#: templates/admin/disclosure-snapshot.php:92
+msgid "Stored content (canonical JSON)"
+msgstr ""
+
+#: templates/admin/partials/banner-preview.php:26
+msgid "Preview"
+msgstr ""
+
+#: templates/admin/partials/banner-preview.php:57
+msgid ""
+"Updates as you type, using the site’s real banner styles and your saved "
+"appearance. The floating button is not shown here."
+msgstr ""
+
+#: templates/admin/partials/findings.php:17
+msgid "Passed"
+msgstr ""
+
+#: templates/admin/partials/findings.php:18
+msgid "Failed"
+msgstr ""
+
+#: templates/admin/partials/findings.php:19
+msgid "Warning"
+msgstr ""
+
+#: templates/admin/partials/findings.php:20
+msgid "Not checked"
+msgstr ""
+
+#: templates/admin/partials/findings.php:21
+msgid "Not applicable"
+msgstr ""
+
+#: templates/admin/partials/findings.php:24
+msgid "Automated check on this server"
+msgstr ""
+
+#: templates/admin/partials/findings.php:25
+msgid "Reported by an administrator (not observed by the plugin)"
+msgstr ""
+
+#: templates/admin/partials/findings.php:26
+msgid "No evidence"
+msgstr ""
+
+#: templates/admin/partials/findings.php:29 templates/admin/proxy-health.php:18
+msgid "Never"
+msgstr ""
+
+#. translators: 1: date/time, 2: how the result was obtained
+#: templates/admin/partials/findings.php:43
+#, php-format
+msgid "Checked: %1$s · %2$s"
+msgstr ""
+
+#. translators: %s: what the check covered
+#: templates/admin/partials/findings.php:51
+#, php-format
+msgid "Scope: %s"
+msgstr ""
+
+#: templates/admin/partials/findings.php:56
+msgid "Problem"
+msgstr ""
+
+#. translators: %s: item name, e.g. a service
+#: templates/admin/partials/findings.php:67
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#. translators: %d: number of further items
+#: templates/admin/partials/findings.php:79
+#, php-format
+msgid "…and %d more"
+msgstr ""
+
+#: templates/admin/partials/findings.php:86
+msgid "Impact"
+msgstr ""
+
+#: templates/admin/partials/findings.php:88
+msgid "Next step"
+msgstr ""
+
+#: templates/admin/partials/sale-sharing-field.php:6
+msgid "California sale/sharing"
+msgstr ""
+
+#: templates/admin/partials/sale-sharing-field.php:13
+msgid ""
+"Assess this service as configured on your site, including contracts and use "
+"for cross-context behavioral advertising. Its consent category alone does "
+"not determine sale/sharing. Unreviewed services cannot load while California "
+"controls are enabled. Save and publish your review."
+msgstr ""
+
+#: templates/admin/partials/summary.php:16
+msgid "Problems found"
+msgstr ""
+
+#: templates/admin/partials/summary.php:17
+msgid "Incomplete: some checks were not performed or need attention"
+msgstr ""
+
+#: templates/admin/partials/summary.php:18
+msgid "Every applicable check passed, including administrator-reported checks"
+msgstr ""
+
+#. translators: 1-4: counts
+#: templates/admin/partials/summary.php:27
+#, php-format
+msgid "%1$d failed · %2$d warnings · %3$d not checked · %4$d passed"
+msgstr ""
+
+#: templates/admin/partials/verification-form.php:24
+msgid "Which steps did you complete and confirm?"
+msgstr ""
+
+#: templates/admin/partials/verification-form.php:33
+#: templates/admin/proxy-health.php:25 templates/admin/status.php:80
+#: templates/admin/status.php:91
+msgid "Result"
+msgstr ""
+
+#: templates/admin/partials/verification-form.php:34
+msgid "Everything I checked behaved as described"
+msgstr ""
+
+#: templates/admin/partials/verification-form.php:35
+msgid "I found a problem"
+msgstr ""
+
+#: templates/admin/partials/verification-form.php:38
+msgid "Notes (browser, pages checked, what went wrong)"
+msgstr ""
+
+#. translators: %d: configuration version
+#: templates/admin/partials/verification-form.php:45
+#, php-format
+msgid ""
+"Recorded against configuration v%d with your user name and the current time. "
+"It stops counting as current evidence when the configuration is published "
+"again, or after 90 days."
+msgstr ""
+
+#: templates/admin/partials/verification-form.php:50
+msgid "Record result"
+msgstr ""
+
+#: templates/admin/proxy-guides.php:5
+msgid "Proxy setup guides"
+msgstr ""
+
+#: templates/admin/proxy-guides.php:6
+msgid ""
+"Endpoint configuration belongs to your integration. Vendor updates do not "
+"automatically expand your allowlist. Update the exact paths in Scripts, "
+"publish, and verify real traffic. These examples are starting points; "
+"consult the linked vendor documentation for current requirements."
+msgstr ""
+
+#: templates/admin/proxy-guides.php:9
+msgid ""
+"Add the external script URL, its consent category/service, and the data-"
+"website-id attribute. Enable proxying."
+msgstr ""
+
+#: templates/admin/proxy-guides.php:10
+msgid ""
+"Allow POST /api/send, or the exact custom collection path configured on your "
+"Umami server. Set the runtime host if it differs from the script host."
+msgstr ""
+
+#: templates/admin/proxy-guides.php:11
+msgid ""
+"The proxy supplies data-host-url unless you override it in Additional "
+"attributes. Publish, grant consent, and confirm real POST requests use your "
+"local proxy URL."
+msgstr ""
+
+#: templates/admin/proxy-guides.php:15
+msgid ""
+"Allow GET and POST for the exact collector path, for example /matomo.php or /"
+"analytics/matomo.php for a subdirectory installation. In your consent-gated "
+"initialization code, point setTrackerUrl at the local proxy base URL "
+"followed by that path, and setSiteId to your site ID. Loading matomo.js "
+"through the proxy alone does not reroute collection. Keep initialization "
+"before the external tracker; remove duplicate theme/plugin installations."
+msgstr ""
+
+#: templates/admin/proxy-guides.php:20
+msgid ""
+"Use Google’s documented tag gateway or server-side tagging setup for first-"
+"party delivery. This generic WordPress proxy is not a replacement for a "
+"Google tagging server. If integrating an existing supported collection "
+"setup, configure only its verified paths and methods. A proxied gtag.js or "
+"GTM container does not automatically reroute its tags, and data-host-url is "
+"not a universal Google setting."
+msgstr ""
+
+#: templates/admin/proxy-guides.php:22
+msgid "Other services"
+msgstr ""
+
+#: templates/admin/proxy-guides.php:23
+msgid ""
+"For Meta, LinkedIn, TikTok, Clarity, and Hotjar, use vendor-supported "
+"routing and inspect real network requests before configuring paths. No "
+"generic complete-proxy recipe is claimed. Keep YouTube, Vimeo, Maps, and "
+"CAPTCHA widgets directly loaded behind the appropriate consent gate unless a "
+"vendor documents a supported alternative. Do not proxy or cache Turnstile’s "
+"script."
+msgstr ""
+
+#: templates/admin/proxy-guides.php:25
+msgid "Verify after every setup change"
+msgstr ""
+
+#: templates/admin/proxy-guides.php:27
+msgid "Before consent, check that no optional tracker requests are made."
+msgstr ""
+
+#: templates/admin/proxy-guides.php:28
+msgid ""
+"After consent, confirm script and event requests use the expected host/path, "
+"and check the vendor dashboard for the real test event."
+msgstr ""
+
+#: templates/admin/proxy-guides.php:29
+msgid ""
+"Withdraw consent and confirm processing stops. Check Proxy diagnostics for "
+"recent transport results; unknown or stale endpoints still need verification."
+msgstr ""
+
+#: templates/admin/proxy-health.php:4
+msgid "Not yet verified"
+msgstr ""
+
+#: templates/admin/proxy-health.php:4
+msgid "HTTP checks passing"
+msgstr ""
+
+#: templates/admin/proxy-health.php:4
+msgid "Failure observed — confirming"
+msgstr ""
+
+#: templates/admin/proxy-health.php:4
+msgid "Failing"
+msgstr ""
+
+#: templates/admin/proxy-health.php:4
+msgid "No recent evidence"
+msgstr ""
+
+#: templates/admin/proxy-health.php:6
+msgid ""
+"Connection failed or the destination is not a permitted public address. "
+"Check the upstream URL and server connectivity."
+msgstr ""
+
+#: templates/admin/proxy-health.php:7
+msgid "Upstream redirected. Configure its final URL."
+msgstr ""
+
+#: templates/admin/proxy-health.php:8
+msgid "Upstream returned an unsupported content type."
+msgstr ""
+
+#: templates/admin/proxy-health.php:9
+msgid "Upstream response exceeded the 2 MiB limit."
+msgstr ""
+
+#: templates/admin/proxy-health.php:15
+msgid ""
+"Published integrations only. Script files are fetched fresh hourly in "
+"batches of five. Runtime endpoints are observed during real proxy traffic; "
+"checks never send synthetic tracking events. No traffic means not yet "
+"verified, not healthy."
+msgstr ""
+
+#: templates/admin/proxy-health.php:16
+msgid ""
+"These checks verify server-to-vendor HTTP forwarding, not browser execution, "
+"consent compliance, or receipt in the vendor dashboard. Use the frontend CMP "
+"Debug panel and your browser Network tab to verify those separately."
+msgstr ""
+
+#: templates/admin/proxy-health.php:17
+msgid ""
+"Schedules depend on WordPress cron running. On low-traffic sites, configure "
+"a system cron. Cached script responses do not count as fresh health checks."
+msgstr ""
+
+#: templates/admin/proxy-health.php:18
+msgid "Last scheduled/manual batch:"
+msgstr ""
+
+#: templates/admin/proxy-health.php:21
+msgid "Check next five scripts now"
+msgstr ""
+
+#: templates/admin/proxy-health.php:22
+msgid "At most once per minute. Collection endpoints are not probed."
+msgstr ""
+
+#: templates/admin/proxy-health.php:25
+msgid "Script"
+msgstr ""
+
+#: templates/admin/proxy-health.php:25
+msgid "Endpoint"
+msgstr ""
+
+#: templates/admin/proxy-health.php:25
+msgid "Last observation (UTC)"
+msgstr ""
+
+#: templates/admin/proxy-health.php:30
+msgid ""
+"No published proxied scripts. Configure an integration under Scripts and "
+"publish it first."
+msgstr ""
+
+#: templates/admin/proxy-health.php:32
+msgid "Regression email alerts"
+msgstr ""
+
+#: templates/admin/proxy-health.php:35
+msgid ""
+"Email the WordPress administration address when a previously working "
+"endpoint fails three consecutive checks or observed requests."
+msgstr ""
+
+#: templates/admin/proxy-health.php:37
+msgid ""
+"Off by default. One digest at most per day, once per incident. Recovery "
+"permits a future alert. Changing an integration resets its baseline. Initial "
+"setup failures show notices but do not trigger regression mail. WordPress "
+"mail acceptance does not guarantee delivery."
+msgstr ""
+
+#: templates/admin/proxy-health.php:38
+msgid ""
+"WordPress could not send the last alert. Check your mail configuration; a "
+"later monitoring run will retry after the daily cooldown."
+msgstr ""
+
+#: templates/admin/proxy-health.php:39
+msgid "Save alert settings"
+msgstr ""
+
+#: templates/admin/publish.php:19
+msgid "Custom services"
+msgstr ""
+
+#: templates/admin/publish.php:20
+msgid "Built-in service overrides (category/activation/domains)"
+msgstr ""
+
+#: templates/admin/publish.php:30
+msgid ""
+"Changes made on the Categories, Services and Scripts screens are staged here "
+"first — nothing on this site changes for a visitor, and no other admin "
+"screen shows the change, until you publish it."
+msgstr ""
+
+#: templates/admin/publish.php:37
+msgid ""
+"Published. This included a meaningful change, so visitors who already "
+"consented will be asked to decide again."
+msgstr ""
+
+#: templates/admin/publish.php:39
+msgid "Published. Nothing published required renewed consent."
+msgstr ""
+
+#: templates/admin/publish.php:46
+msgid "Staged changes discarded."
+msgstr ""
+
+#: templates/admin/publish.php:50
+msgid ""
+"Nothing staged right now — Categories, Services and Scripts all match what "
+"is currently published."
+msgstr ""
+
+#: templates/admin/publish.php:55
+msgid "Section"
+msgstr ""
+
+#. translators: 1: currently published count, 2: staged count
+#: templates/admin/publish.php:71
+#, php-format
+msgid "Staged (%1$d published → %2$d staged)"
+msgstr ""
+
+#: templates/admin/publish.php:77
+msgid "Staged"
+msgstr ""
+
+#: templates/admin/publish.php:88
+msgid ""
+"This includes a meaningful change (brief section 7): publishing will require "
+"visitors who already consented to decide again on their next visit."
+msgstr ""
+
+#: templates/admin/publish.php:91
+msgid ""
+"Nothing staged so far requires renewed consent — these look like cosmetic "
+"changes only."
+msgstr ""
+
+#: templates/admin/publish.php:98
+msgid "Publish now"
+msgstr ""
+
+#: templates/admin/publish.php:102
+msgid "Discard all staged changes? This cannot be undone."
+msgstr ""
+
+#: templates/admin/publish.php:105
+msgid "Discard changes"
+msgstr ""
+
+#: templates/admin/scanner.php:39
+msgid ""
+"Fetches your own published pages/posts (up to 40) and checks each one's HTML "
+"against every registered service's known domains and patterns — the same "
+"detection Blocking\\DomRewriter uses live, run here for discovery instead of "
+"enforcement. It won't catch something injected purely by client-side "
+"JavaScript after the page loads. Nothing is activated or created "
+"automatically: review the results below and confirm each one."
+msgstr ""
+
+#: templates/admin/scanner.php:45 templates/admin/setup.php:121
+msgid "Scan again"
+msgstr ""
+
+#: templates/admin/scanner.php:50
+msgid "No scan has been run yet."
+msgstr ""
+
+#. translators: 1: number of pages scanned, 2: date and time
+#: templates/admin/scanner.php:58
+#, php-format
+msgid "Last scan checked %1$d page(s) on %2$s."
+msgstr ""
+
+#: templates/admin/scanner.php:65
+msgid "Found, not yet active"
+msgstr ""
+
+#: templates/admin/scanner.php:67
+msgid "Nothing — every service the scan matched is already active."
+msgstr ""
+
+#: templates/admin/scanner.php:74 templates/admin/scanner.php:119
+msgid "Found on"
+msgstr ""
+
+#: templates/admin/scanner.php:93
+msgid "Activate"
+msgstr ""
+
+#: templates/admin/scanner.php:103
+msgid "Found, already active"
+msgstr ""
+
+#: templates/admin/scanner.php:105
+msgid "Nothing yet."
+msgstr ""
+
+#: templates/admin/scanner.php:110
+msgid "Unrecognized domains"
+msgstr ""
+
+#: templates/admin/scanner.php:111
+msgid ""
+"Script/iframe/image sources found on your site that don't match any "
+"registered service. Some of these may be harmless (a CDN, a font host) — "
+"check before adding."
+msgstr ""
+
+#: templates/admin/scanner.php:113
+msgid "Nothing unrecognized found."
+msgstr ""
+
+#: templates/admin/scanner.php:118
+msgid "Domain"
+msgstr ""
+
+#: templates/admin/scanner.php:137
+msgid "Add as custom service"
+msgstr ""
+
+#: templates/admin/script-form.php:24
+msgid "Edit script"
+msgstr ""
+
+#: templates/admin/script-form.php:24 templates/admin/scripts.php:21
+#: templates/admin/services.php:133
+msgid "Add script"
+msgstr ""
+
+#: templates/admin/script-form.php:38 templates/admin/scripts.php:44
+#: templates/admin/status.php:79 templates/admin/status.php:90
+msgid "Type"
+msgstr ""
+
+#: templates/admin/script-form.php:42
+msgid "External URL"
+msgstr ""
+
+#: templates/admin/script-form.php:47
+msgid "Inline code"
+msgstr ""
+
+#: templates/admin/script-form.php:52
+msgid "Script URL"
+msgstr ""
+
+#: templates/admin/script-form.php:56
+msgid "Additional attributes"
+msgstr ""
+
+#: templates/admin/script-form.php:59
+msgid ""
+"Optional. One per line, e.g. data-website-id=\"630c3f94-db3d-42af-8d5d-"
+"b9b2a7bd4966\" — for scripts that need attributes beyond src, such as Umami."
+msgstr ""
+
+#: templates/admin/script-form.php:63
+msgid "Ad-block bypass"
+msgstr ""
+
+#: templates/admin/script-form.php:67
+msgid "Proxy this script through this site's own domain"
+msgstr ""
+
+#: templates/admin/script-form.php:70
+msgid ""
+"Fetches the script (and, where the vendor supports it and is configured to "
+"use it, its runtime API calls) through this site instead of the vendor's "
+"domain — this is what most blocklists key on. Only takes effect after "
+"consent is granted, same as an unproxied script."
+msgstr ""
+
+#. translators: %s: proxy URL
+#: templates/admin/script-form.php:75
+#, php-format
+msgid "Proxy URL: %s"
+msgstr ""
+
+#: templates/admin/script-form.php:82
+msgid "Runtime API host (optional)"
+msgstr ""
+
+#: templates/admin/script-form.php:86
+msgid ""
+"Only needed if the script's runtime calls go to a different host than the "
+"script file itself — e.g. GA4's gtag.js is served from googletagmanager.com, "
+"but its collection endpoint is www.google-analytics.com. Leave blank when "
+"they're the same host (most self-hosted analytics tools). Requires the "
+"vendor's supported routing configuration; changing this host alone does not "
+"reroute browser requests. See the setup guides."
+msgstr ""
+
+#: templates/admin/script-form.php:91
+msgid "Allowed runtime endpoints"
+msgstr ""
+
+#: templates/admin/script-form.php:94
+msgid ""
+"One method and exact path per line. GET, HEAD, and POST only. The configured "
+"script URL already permits GET/HEAD. Empty means script-only proxying. "
+"Existing installations retain their previous paths here; review them before "
+"publishing."
+msgstr ""
+
+#: templates/admin/script-form.php:95
+msgid "Proxy diagnostics and setup guides"
+msgstr ""
+
+#: templates/admin/script-form.php:99
+msgid "Code"
+msgstr ""
+
+#: templates/admin/script-form.php:102
+msgid ""
+"Raw JavaScript, without surrounding <script> tags. Only available to "
+"administrators."
+msgstr ""
+
+#: templates/admin/script-form.php:106 templates/admin/scripts.php:45
+msgid "Placement"
+msgstr ""
+
+#: templates/admin/script-form.php:109
+msgid "Head"
+msgstr ""
+
+#: templates/admin/script-form.php:110
+msgid "Body start"
+msgstr ""
+
+#: templates/admin/script-form.php:111
+msgid "Footer"
+msgstr ""
+
+#: templates/admin/script-form.php:113
+msgid ""
+"Body start requires the active theme to call wp_body_open() — most modern "
+"themes do."
+msgstr ""
+
+#: templates/admin/script-form.php:117
+msgid "Consent category"
+msgstr ""
+
+#: templates/admin/script-form.php:129
+msgid "Service (optional)"
+msgstr ""
+
+#: templates/admin/script-form.php:132
+msgid "— none —"
+msgstr ""
+
+#: templates/admin/script-form.php:139
+msgid ""
+"Lets a visitor grant consent for just this service via a service-level "
+"override, in addition to its category."
+msgstr ""
+
+#: templates/admin/script-form.php:143
+msgid "Load on"
+msgstr ""
+
+#: templates/admin/script-form.php:146
+msgid "Whole site"
+msgstr ""
+
+#: templates/admin/script-form.php:147
+msgid "Specific URL"
+msgstr ""
+
+#: templates/admin/script-form.php:148
+msgid "URL pattern"
+msgstr ""
+
+#: templates/admin/script-form.php:149
+msgid "Post type"
+msgstr ""
+
+#: templates/admin/script-form.php:151
+msgid "e.g. /contact/, /blog/*, or post"
+msgstr ""
+
+#: templates/admin/script-form.php:161 templates/admin/service-form.php:107
+#: templates/admin/service-override-form.php:131
+msgid "Cancel"
+msgstr ""
+
+#: templates/admin/scripts.php:29
+msgid ""
+"This adds, removes, or materially changes a script, which counts as a "
+"meaningful change: once published, visitors who already consented will be "
+"asked to decide again on their next visit. Nothing changes for visitors "
+"until you publish this change."
+msgstr ""
+
+#: templates/admin/scripts.php:34
+msgid ""
+"A simple way to add tracking or other third-party code without a full Google "
+"Tag Manager container. The plugin outputs and consent-gates it itself — it "
+"will not load or execute until the chosen category/service has consent."
+msgstr ""
+
+#: templates/admin/scripts.php:38
+msgid "No custom scripts yet."
+msgstr ""
+
+#: templates/admin/scripts.php:47
+msgid "Condition"
+msgstr ""
+
+#: templates/admin/scripts.php:58
+msgid "Proxied through this site (ad-block bypass)"
+msgstr ""
+
+#: templates/admin/scripts.php:71 templates/admin/services.php:111
+#: templates/admin/services.php:115
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: templates/admin/scripts.php:74
+msgid "Delete this script?"
+msgstr ""
+
+#: templates/admin/service-form.php:27
+msgid "Edit service"
+msgstr ""
+
+#: templates/admin/service-form.php:27 templates/admin/services.php:27
+msgid "Add custom service"
+msgstr ""
+
+#: templates/admin/service-form.php:38
+#: templates/admin/service-override-form.php:58 templates/admin/services.php:67
+#: templates/admin/services.php:90
+msgid "Active"
+msgstr ""
+
+#: templates/admin/service-form.php:42
+#: templates/admin/service-override-form.php:62
+msgid "Disclose this service in the banner and count it for consent"
+msgstr ""
+
+#: templates/admin/service-form.php:44
+msgid ""
+"Unchecked services are still detected and blocked wherever found (nothing is "
+"ever released without consent) — they just aren't shown yet."
+msgstr ""
+
+#: templates/admin/service-form.php:72
+#: templates/admin/service-override-form.php:98
+msgid "Privacy policy URL"
+msgstr "URL der Datenschutzerklärung"
+
+#: templates/admin/service-form.php:76
+#: templates/admin/service-override-form.php:105
+msgid "Domains"
+msgstr ""
+
+#: templates/admin/service-form.php:79
+msgid ""
+"One per line. Matches anywhere in a script/iframe/image src, e.g. analytics."
+"example.com"
+msgstr ""
+
+#: templates/admin/service-form.php:83
+#: templates/admin/service-override-form.php:112
+msgid "Script patterns"
+msgstr ""
+
+#: templates/admin/service-form.php:86
+msgid ""
+"One per line. Also matched against inline <script> content, e.g. a filename "
+"like tracker.js"
+msgstr ""
+
+#: templates/admin/service-form.php:90
+#: templates/admin/service-override-form.php:116
+msgid "Iframe patterns"
+msgstr ""
+
+#: templates/admin/service-form.php:97
+msgid ""
+"One per line: name|duration|purpose (duration and purpose optional), e.g. "
+"_my_tracker|30 days|Distinguishes visitors"
+msgstr ""
+
+#. translators: %s: service name
+#: templates/admin/service-override-form.php:34
+#, php-format
+msgid "Edit service: %s"
+msgstr ""
+
+#: templates/admin/service-override-form.php:41
+msgid ""
+"This service is defined in code (by this plugin, a theme or another plugin). "
+"Its name is fixed; everything below can be adjusted. Changes are staged "
+"until you publish."
+msgstr ""
+
+#: templates/admin/service-override-form.php:64
+msgid ""
+"Unchecked services are still detected and blocked wherever found (nothing is "
+"ever released without consent) — they just aren't shown yet. A freshly-"
+"registered built-in starts unchecked until you confirm it's actually in use "
+"here (the site scanner can help find these)."
+msgstr ""
+
+#. translators: %s: built-in default category label
+#: templates/admin/service-override-form.php:82
+#, php-format
+msgid "Built-in default: %s"
+msgstr ""
+
+#: templates/admin/service-override-form.php:94
+msgid ""
+"Shown to visitors under the service name. Leave empty to use the built-in "
+"text, if there is one."
+msgstr ""
+
+#: templates/admin/service-override-form.php:101
+msgid ""
+"The provider’s privacy policy, linked from the banner. For a self-hosted "
+"tool, link your own privacy policy."
+msgstr ""
+
+#: templates/admin/service-override-form.php:108
+msgid "One per line. Matches anywhere in a script/iframe/image src."
+msgstr ""
+
+#: templates/admin/service-override-form.php:127
+msgid "Reset to built-in default"
+msgstr ""
+
+#: templates/admin/services.php:35
+msgid ""
+"This adds or removes a vendor, which counts as a meaningful change: once "
+"published, visitors who already consented will be asked to decide again on "
+"their next visit. Nothing changes for visitors until you publish this change."
+msgstr ""
+
+#: templates/admin/services.php:40
+msgid ""
+"Only Active services are disclosed in the banner and count for consent. "
+"Built-in services start inactive until confirmed actually in use here — "
+"activate one manually below, or run a site scan to find what's really "
+"present."
+msgstr ""
+
+#: templates/admin/services.php:47
+msgid ""
+"A Cookie Policy page listing every active service and its cookies has been "
+"created."
+msgstr ""
+
+#: templates/admin/services.php:48
+msgid "Edit it"
+msgstr ""
+
+#: templates/admin/services.php:50
+msgid ""
+"You can generate a Cookie Policy page that lists every active service and "
+"its cookies, using the [cmp_services] shortcode."
+msgstr ""
+
+#: templates/admin/services.php:57
+msgid "Create Cookie Policy page"
+msgstr ""
+
+#: templates/admin/services.php:63
+msgid ""
+"Review each service’s California sale/sharing classification in its edit "
+"form, then publish. Unreviewed services stay blocked when California "
+"controls are enabled."
+msgstr ""
+
+#: templates/admin/services.php:71
+msgid "Source"
+msgstr ""
+
+#: templates/admin/services.php:72
+msgid "Domains / patterns"
+msgstr ""
+
+#: templates/admin/services.php:92
+msgid "Inactive"
+msgstr ""
+
+#: templates/admin/services.php:101
+msgid "Built-in"
+msgstr ""
+
+#: templates/admin/services.php:101
+msgid "Custom"
+msgstr ""
+
+#: templates/admin/services.php:103
+msgid "overridden"
+msgstr ""
+
+#: templates/admin/services.php:118
+msgid "Delete this service?"
+msgstr ""
+
+#: templates/admin/services.php:129
+msgid "Manage script"
+msgstr ""
+
+#: templates/admin/setup.php:45
+msgid "Scan finished. Review what it found below."
+msgstr ""
+
+#: templates/admin/setup.php:46
+msgid "Saved. Service and category changes are staged until you publish."
+msgstr ""
+
+#: templates/admin/setup.php:47
+msgid "Published. Visitors now see this configuration."
+msgstr ""
+
+#: templates/admin/setup.php:48
+msgid ""
+"Published. Because services or categories changed, visitors who already "
+"decided will be asked again."
+msgstr ""
+
+#: templates/admin/setup.php:55
+msgid ""
+"Six steps from an unconfigured site to a verified banner. Nothing you change "
+"here reaches visitors until the publish step."
+msgstr ""
+
+#: templates/admin/setup.php:56
+msgid "Skip to all settings"
+msgstr ""
+
+#: templates/admin/setup.php:59
+msgid "Setup steps"
+msgstr ""
+
+#: templates/admin/setup.php:70 templates/admin/status.php:48
+msgid "Verification result recorded."
+msgstr ""
+
+#. translators: 1: step number, 2: total steps, 3: step name
+#: templates/admin/setup.php:80
+#, php-format
+msgid "Step %1$d of %2$d: %3$s"
+msgstr ""
+
+#: templates/admin/setup.php:85
+msgid ""
+"The scan fetches up to 40 of your published pages as a logged-out visitor "
+"would, and looks for known services and external hosts in the HTML."
+msgstr ""
+
+#: templates/admin/setup.php:86
+msgid ""
+"A scan finds likely services. It does not show that tracking is blocked at "
+"runtime"
+msgstr ""
+
+#: templates/admin/setup.php:87
+msgid ""
+"— anything added later by JavaScript, pages behind a login, and checkout "
+"steps are not seen. The verify step covers runtime behaviour."
+msgstr ""
+
+#. translators: 1: date/time, 2: number of pages
+#: templates/admin/setup.php:95
+#, php-format
+msgid "Last scan: %1$s, %2$d pages."
+msgstr ""
+
+#. translators: %d: number of services
+#: templates/admin/setup.php:105
+#, php-format
+msgid "%d known services detected"
+msgstr ""
+
+#. translators: %d: number of hosts
+#: templates/admin/setup.php:111
+#, php-format
+msgid "%d unrecognized external hosts"
+msgstr ""
+
+#: templates/admin/setup.php:121
+msgid "Scan my site"
+msgstr ""
+
+#: templates/admin/setup.php:122
+msgid "This can take up to a minute."
+msgstr ""
+
+#: templates/admin/setup.php:126
+msgid ""
+"Confirming a service lists it in the banner so visitors can allow it. "
+"Unconfirmed services stay blocked wherever the plugin recognises them, but "
+"visitors cannot allow them."
+msgstr ""
+
+#: templates/admin/setup.php:127
+msgid ""
+"Check each purpose and category. The category decides which banner switch "
+"covers the service."
+msgstr ""
+
+#: templates/admin/setup.php:130
+msgid ""
+"No services detected or confirmed yet. Run a scan, or add services manually."
+msgstr ""
+
+#: templates/admin/setup.php:138 templates/admin/setup.php:148
+msgid "Service and purpose"
+msgstr ""
+
+#: templates/admin/setup.php:139 templates/admin/setup.php:156
+msgid "Finding"
+msgstr ""
+
+#: templates/admin/setup.php:141 templates/admin/setup.php:178
+msgid "Confirmed"
+msgstr ""
+
+#: templates/admin/setup.php:154
+msgid "No purpose entered"
+msgstr ""
+
+#: templates/admin/setup.php:159
+msgid "Detected by scan, confirmed by you"
+msgstr ""
+
+#: templates/admin/setup.php:160
+msgid "Detected by scan, not confirmed"
+msgstr ""
+
+#: templates/admin/setup.php:161
+msgid "Confirmed by you, not detected by scan (unverified)"
+msgstr ""
+
+#. translators: %s: service name
+#: templates/admin/setup.php:169
+#, php-format
+msgid "Category for %s"
+msgstr ""
+
+#: templates/admin/setup.php:181
+msgid "In use"
+msgstr ""
+
+#: templates/admin/setup.php:190
+msgid "Save decisions"
+msgstr ""
+
+#: templates/admin/setup.php:191
+msgid "Edit purposes, cookies and domains on the Services screen"
+msgstr ""
+
+#: templates/admin/setup.php:198
+msgid ""
+"These hosts are not matched by any service, so the plugin does not block "
+"them. Decide for each one whether it needs consent."
+msgstr ""
+
+#. translators: %s: host name
+#: templates/admin/setup.php:206
+#, php-format
+msgid "Create a service for %s"
+msgstr ""
+
+#: templates/admin/setup.php:215
+msgid ""
+"These checks run against the configuration you are about to publish. They "
+"show whether it is consistent and complete, not whether trackers are blocked "
+"in a browser."
+msgstr ""
+
+#: templates/admin/setup.php:221
+msgid "Check again"
+msgstr ""
+
+#: templates/admin/setup.php:224
+msgid ""
+"Banner wording and the policy link take effect as soon as you save. Leave a "
+"text field empty to use the built-in wording, which is translated into the "
+"visitor’s language where a translation is available."
+msgstr ""
+
+#: templates/admin/setup.php:236
+msgid ""
+"Say what you use optional technologies for, and that visitors can change "
+"their choice at any time."
+msgstr ""
+
+#: templates/admin/setup.php:239
+msgid "Privacy policy page linked from the banner"
+msgstr ""
+
+#. translators: %s: page title
+#: templates/admin/setup.php:248
+#, php-format
+msgid "Use the page set in Settings → Privacy (%s)"
+msgstr ""
+
+#: templates/admin/setup.php:249
+msgid "Use the page set in Settings → Privacy (none set)"
+msgstr ""
+
+#: templates/admin/setup.php:260
+msgid ""
+"Your cookie policy page is published and is linked from the banner as well."
+msgstr ""
+
+#: templates/admin/setup.php:262
+msgid ""
+"Optional: a cookie policy page listing every service and cookie can be "
+"generated on the Services screen."
+msgstr ""
+
+#: templates/admin/setup.php:263
+msgid "Go to Services"
+msgstr ""
+
+#: templates/admin/setup.php:267
+msgid ""
+"No published privacy policy page is linked yet. Visitors will not be able to "
+"reach your full privacy information from the banner."
+msgstr ""
+
+#: templates/admin/setup.php:270
+msgid "Save banner"
+msgstr ""
+
+#: templates/admin/setup.php:271
+msgid "Colours, position, logo and more on the Banner screen"
+msgstr ""
+
+#: templates/admin/setup.php:280
+msgid "Preview the banner"
+msgstr ""
+
+#: templates/admin/setup.php:281
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: templates/admin/setup.php:284
+msgid ""
+"The preview opens your home page with the banner shown and your staged "
+"services and categories in the settings dialog. Choices made in the preview "
+"are not saved, and blocking on that page still follows the published "
+"configuration."
+msgstr ""
+
+#: templates/admin/setup.php:287
+msgid ""
+"Nothing is waiting to be published. The site already uses this configuration."
+msgstr ""
+
+#: templates/admin/setup.php:291
+msgid ""
+"Publishing changes which services or categories visitors are asked about. "
+"Visitors who already decided will see the banner again."
+msgstr ""
+
+#: templates/admin/setup.php:293
+msgid "The staged changes are cosmetic. Existing decisions stay valid."
+msgstr ""
+
+#: templates/admin/setup.php:298
+msgid "Publish configuration"
+msgstr ""
+
+#: templates/admin/setup.php:299
+msgid "Review details or discard"
+msgstr ""
+
+#: templates/admin/setup.php:305
+msgid ""
+"Only a check in a real browser shows whether trackers wait for consent on "
+"your site. Follow these steps in a private window, with the browser "
+"developer tools open on the Network and Storage (Application) tabs."
+msgstr ""
+
+#: templates/admin/setup.php:312
+msgid ""
+"While logged in, the “CMP Debug” panel on your site shows the current "
+"consent state and which elements were blocked or released on that page. Use "
+"it to understand results, not instead of the private-window check."
+msgstr ""
+
+#: templates/admin/setup.php:314
+msgid ""
+"Then check in each vendor’s own dashboard that data arrives after consent, "
+"and does not arrive after a rejection. Record both results:"
+msgstr ""
+
+#: templates/admin/setup.php:318
+msgid "Browser check"
+msgstr ""
+
+#: templates/admin/setup.php:321
+msgid "Vendor check"
+msgstr ""
+
+#: templates/admin/setup.php:327
+msgid "Finish and go to Status"
+msgstr ""
+
+#. translators: %s: step name
+#: templates/admin/setup.php:335
+#, php-format
+msgid "Previous: %s"
+msgstr ""
+
+#. translators: %s: step name
+#: templates/admin/setup.php:341
+#, php-format
+msgid "Next: %s"
+msgstr ""
+
+#: templates/admin/status.php:23
+msgid "1. Configuration validation"
+msgstr ""
+
+#: templates/admin/status.php:24
+msgid ""
+"Whether the published settings are consistent and complete. Checked "
+"automatically each time this page loads."
+msgstr ""
+
+#: templates/admin/status.php:27
+msgid "2. Discovery"
+msgstr ""
+
+#: templates/admin/status.php:28
+msgid ""
+"What the last site scan found in your pages’ HTML. A scan cannot see "
+"everything; finding nothing is not proof that nothing is there."
+msgstr ""
+
+#: templates/admin/status.php:31
+msgid "3. Proxy and upstream availability"
+msgstr ""
+
+#: templates/admin/status.php:32
+msgid ""
+"Whether this server could reach the vendor for proxied scripts. A successful "
+"HTTP response here says nothing about consent enforcement or vendor-side "
+"processing."
+msgstr ""
+
+#: templates/admin/status.php:35
+msgid "4. Consent enforcement in the browser"
+msgstr ""
+
+#: templates/admin/status.php:36
+msgid ""
+"Whether trackers really wait for consent in a visitor’s browser. Only a "
+"check in a real browser can show this."
+msgstr ""
+
+#: templates/admin/status.php:39
+msgid "5. Vendor-side receipt"
+msgstr ""
+
+#: templates/admin/status.php:40
+msgid ""
+"Whether the vendor actually received data after consent. Only the vendor’s "
+"own dashboard can show this."
+msgstr ""
+
+#: templates/admin/status.php:51
+msgid ""
+"Each area below proves something different. A passing result in one area is "
+"not evidence for another. The plugin does not certify legal compliance."
+msgstr ""
+
+#: templates/admin/status.php:64
+msgid "Record a browser verification"
+msgstr ""
+
+#: templates/admin/status.php:64
+msgid "Record a vendor verification"
+msgstr ""
+
+#: templates/admin/status.php:74
+msgid "Verification history"
+msgstr ""
+
+#: templates/admin/status.php:78 templates/admin/status.php:89
+msgid "When"
+msgstr ""
+
+#: templates/admin/status.php:82 templates/admin/status.php:93
+msgid "By"
+msgstr ""
+
+#: templates/admin/status.php:83 templates/admin/status.php:94
+msgid "Notes"
+msgstr ""
+
+#: templates/admin/status.php:90
+msgid "Browser"
+msgstr ""
+
+#: templates/admin/status.php:90
+msgid "Vendor"
+msgstr ""
+
+#: templates/admin/status.php:91
+msgid "All steps confirmed"
+msgstr ""
+
+#: templates/admin/status.php:91
+msgid "Problem found"
+msgstr ""
+
+#: templates/admin/status.php:91
+msgid "Some steps confirmed"
+msgstr ""
+
+#: templates/frontend/banner.php:51
+msgid "Preview for administrators. Choices made here are not saved."
+msgstr "Vorschau für Administratoren. Hier getroffene Entscheidungen werden nicht gespeichert."
+
+#. translators: %d: number of individual services in this category
+#: templates/frontend/banner.php:119
+#, php-format
+msgid "%d individual service"
+msgid_plural "%d individual services"
+msgstr[0] "%d einzelner Dienst"
+msgstr[1] "%d einzelne Dienste"
+
+#. translators: %s: category label, e.g. "Marketing"
+#: templates/frontend/banner.php:129
+#, php-format
+msgid "Individual %s services"
+msgstr "Einzelne Dienste der Kategorie %s"
+
+#. translators: %s: comma-separated list of cookie names, each optionally followed by its duration
+#: templates/frontend/banner.php:164
+#, php-format
+msgid "Cookies: %s"
+msgstr "Cookies: %s"
+
+#. translators: %s: provider name, e.g. "Google"
+#: templates/frontend/banner.php:176
+#, php-format
+msgid "%s privacy policy"
+msgstr "Datenschutzerklärung von %s"
+
+#: templates/frontend/california.php:15
+msgid ""
+"Enable JavaScript to save a browser opt-out here, or contact the site "
+"through its privacy policy to exercise your rights."
+msgstr "Aktivieren Sie JavaScript, um hier einen Widerspruch für diesen Browser zu speichern, oder kontaktieren Sie die Website über die Datenschutzerklärung, um Ihre Rechte auszuüben."
+
+#: templates/frontend/debug-panel.php:14 templates/frontend/debug-panel.php:19
+msgid "CMP Debug"
+msgstr "CMP-Debug"
+
+#: templates/frontend/debug-panel.php:17
+msgid "Consentimental diagnostics"
+msgstr "Consentimental-Diagnose"
+
+#: templates/frontend/debug-panel.php:20
+msgid "Close"
+msgstr "Schließen"
+
+#: templates/frontend/debug-panel.php:24
+msgid "Consent"
+msgstr "Einwilligung"
+
+#: templates/frontend/debug-panel.php:29
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#: templates/frontend/debug-panel.php:34
+msgid "Active services"
+msgstr "Aktive Dienste"
+
+#: templates/frontend/debug-panel.php:44
+msgid "Blocked"
+msgstr "Blockiert"
+
+#: templates/frontend/debug-panel.php:49
+msgid "Released after consent"
+msgstr "Nach Einwilligung freigegeben"
+
+#: templates/frontend/debug-panel.php:54
+msgid "Self-test"
+msgstr "Selbsttest"
+
+#: templates/frontend/debug-panel.php:56
+msgid "Reset consent"
+msgstr "Einwilligung zurücksetzen"
+
+#: templates/frontend/debug-panel.php:57
+msgid "Simulate no consent"
+msgstr "Keine Einwilligung simulieren"
+
+#: templates/frontend/debug-panel.php:58
+msgid "Simulate analytics consent"
+msgstr "Statistik-Einwilligung simulieren"
+
+#: templates/frontend/debug-panel.php:59
+msgid "Simulate marketing consent"
+msgstr "Marketing-Einwilligung simulieren"
+
+#: templates/frontend/debug-panel.php:60
+msgid "Simulate all consent"
+msgstr "Vollständige Einwilligung simulieren"
+
+#: templates/frontend/debug-panel.php:61
+msgid "Reopen banner"
+msgstr "Banner erneut öffnen"
+
+#: templates/frontend/services-table.php:18
+msgid "Services and cookies used on this site"
+msgstr "Auf dieser Website verwendete Dienste und Cookies"
+
+#: templates/frontend/services-table.php:26
+msgid "Duration"
+msgstr "Speicherdauer"
+
+#: templates/frontend/services-table.php:33
+msgid "No services are currently configured."
+msgstr "Derzeit sind keine Dienste konfiguriert."
+
+#: templates/frontend/services-table.php:47
+msgid "View"
+msgstr "Ansehen"
+
+#. translators: %d: number of days consent records are kept
+#: templates/frontend/services-table.php:60
+#, php-format
+msgid ""
+"When you make a cookie consent choice on this site, we record your anonymous "
+"consent ID, the choice you made, and the time, so we can demonstrate that "
+"consent was given if asked. This record is kept for up to %d days and is not "
+"shared with third parties."
+msgstr "Wenn Sie auf dieser Website eine Cookie-Entscheidung treffen, speichern wir Ihre anonyme Einwilligungs-ID, Ihre Entscheidung und den Zeitpunkt. So können wir die Einwilligung bei Bedarf nachweisen. Der Eintrag wird bis zu %d Tage aufbewahrt und nicht an Dritte weitergegeben."
+
+#: assets/js/blocks/services-block.js:16 assets/js/blocks/services-block.js:28
+msgid "Consent Services"
+msgstr "Einwilligungsdienste"
+
+#: assets/js/blocks/services-block.js:17
+msgid "Displays the site’s current consent service and cookie inventory."
+msgstr "Zeigt die aktuellen Einwilligungsdienste und Cookies dieser Website an."
+
+#: assets/js/blocks/services-block.js:32
+msgid "The service/cookie table is rendered live on the published page."
+msgstr "Die Dienst- und Cookie-Tabelle wird auf der veröffentlichten Seite aktuell erzeugt."

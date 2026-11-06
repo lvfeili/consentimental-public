@@ -1,0 +1,129 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  unit:
+    name: Lint and unit tests (PHP ${{ matrix.php }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ['8.1', '8.2', '8.3', '8.4']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: none
+          tools: composer
+      - run: find consentimental.php uninstall.php src templates tests -name '*.php' -not -path '*/node_modules/*' -print0 | xargs -0 -n1 php -l > /dev/null
+      - run: composer install --no-interaction --no-progress
+      - run: vendor/bin/phpunit --do-not-cache-result
+
+  release:
+    name: Release checks and package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          coverage: none
+      - run: bin/release-check.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: plugin-zip
+          path: dist/*.zip
+
+  e2e:
+    # Disposable WordPress per job (bin/e2e-env.sh): nothing persistent, no real
+    # vendor contacted (browser requests are intercepted, server HTTP is blocked),
+    # no real mail sent (wp_mail is short-circuited).
+    name: WordPress ${{ matrix.wp }} / PHP ${{ matrix.php }} — ${{ matrix.browsers }}
+    runs-on: ubuntu-latest
+    needs: release
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # Oldest supported WordPress on the oldest supported PHP.
+          - wp: '6.4'
+            php: '8.1'
+            wp_tag: php8.1-apache
+            cli_tag: cli-php8.1
+            browsers: chromium
+            install: chromium
+            projects: --project=chromium
+            plugins: ''
+          # Current WordPress on current PHP, every browser and mobile profile.
+          - wp: latest
+            php: '8.4'
+            wp_tag: php8.4-apache
+            cli_tag: cli-php8.4
+            browsers: all browsers
+            install: chromium firefox webkit
+            projects: ''
+            plugins: ''
+          # Representative third-party combination (docs/compatibility.md): shop,
+          # page builder, script optimisation, multilingual and page cache together.
+          - wp: latest
+            php: '8.4'
+            wp_tag: php8.4-apache
+            cli_tag: cli-php8.4
+            browsers: chromium + webkit with plugins
+            install: chromium webkit
+            projects: --project=chromium --project=webkit --project=mobile-safari
+            plugins: woocommerce elementor autoptimize polylang wp-super-cache
+    env:
+      CMP_E2E_WP_TAG: ${{ matrix.wp_tag }}
+      CMP_E2E_CLI_TAG: ${{ matrix.cli_tag }}
+      CMP_E2E_WP_VERSION: ${{ matrix.wp != 'latest' && matrix.wp || '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Start disposable WordPress
+        run: bin/e2e-env.sh up
+      - name: WordPress integration checks (rolled back)
+        run: |
+          bin/e2e-env.sh php tests/Integration/security.php
+          bin/e2e-env.sh php tests/Integration/disclosure.php
+          bin/e2e-env.sh php tests/Integration/first-party.php
+      - name: Upgrade path from the 0.2 schema
+        run: bin/e2e-env.sh php tests/Integration/upgrade.php
+      - name: Install and configure third-party plugins
+        if: matrix.plugins != ''
+        run: bin/e2e-env.sh compat ${{ matrix.plugins }}
+      - name: Install browsers
+        working-directory: tests/e2e
+        run: |
+          npm ci || npm install
+          npx playwright install --with-deps ${{ matrix.install }}
+      - name: Browser tests
+        working-directory: tests/e2e
+        run: npx playwright test ${{ matrix.projects }}
+        env:
+          CI: '1'
+      - name: WordPress debug log
+        if: failure()
+        run: docker compose -p cmp-e2e -f tests/e2e/docker-compose.yml exec -T wordpress cat /tmp/wp-debug.log || true
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report-wp${{ matrix.wp }}-php${{ matrix.php }}${{ matrix.plugins != '' && '-plugins' || '' }}
+          path: tests/e2e/playwright-report
+      - name: Tear down
+        if: always()
+        run: bin/e2e-env.sh down

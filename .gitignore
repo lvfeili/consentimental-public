@@ -1,0 +1,13 @@
+/vendor/
+/build/
+/dist/
+node_modules/
+/.phpunit.cache/
+/.phpunit.result.cache
+*.log
+.DS_Store
+tests/Browser/test-results/
+tests/Browser/playwright-report/
+/tests/e2e/.build/
+/tests/e2e/test-results/
+/tests/e2e/playwright-report/

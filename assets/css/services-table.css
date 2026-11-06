@@ -1,0 +1,25 @@
+.cmp-services-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-family:
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif;
+	font-size: 14px;
+}
+
+.cmp-services-table th,
+.cmp-services-table td {
+	text-align: left;
+	vertical-align: top;
+	padding: 8px 12px;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.cmp-services-table th {
+	font-weight: 600;
+}

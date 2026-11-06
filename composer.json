@@ -1,0 +1,30 @@
+{
+    "name": "consentimental/consentimental",
+    "description": "WordPress consent management plugin focused on enforced prior blocking, not just a banner.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "yoast/phpunit-polyfills": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Consentimental\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Consentimental\\Tests\\": "tests/Unit/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit",
+        "build": "bash bin/build.sh"
+    }
+}

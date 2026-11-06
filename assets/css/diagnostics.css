@@ -1,0 +1,152 @@
+#cmp-debug-toggle,
+#cmp-debug-panel {
+	box-sizing: border-box;
+	font-family: Menlo, Consolas, 'Courier New', monospace;
+	font-size: 12px;
+}
+
+#cmp-debug-toggle *,
+#cmp-debug-panel * {
+	box-sizing: border-box;
+}
+
+#cmp-debug-toggle {
+	position: fixed;
+	left: 16px;
+	bottom: 16px;
+	z-index: 1000010;
+	background: #1a1a1a;
+	color: #7dffb3;
+	border: 1px solid #333;
+	border-radius: 4px;
+	padding: 8px 12px;
+	cursor: pointer;
+}
+
+#cmp-debug-panel {
+	position: fixed;
+	left: 16px;
+	bottom: 60px;
+	z-index: 1000010;
+	width: 360px;
+	max-height: 70vh;
+	overflow-y: auto;
+	background: #1a1a1a;
+	color: #e0e0e0;
+	border: 1px solid #333;
+	border-radius: 6px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+#cmp-debug-panel[hidden] {
+	display: none;
+}
+
+.cmp-debug-panel__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 12px;
+	border-bottom: 1px solid #333;
+	position: sticky;
+	top: 0;
+	background: #1a1a1a;
+}
+
+.cmp-debug-panel__header h2 {
+	margin: 0;
+	font-size: 13px;
+	color: #7dffb3;
+}
+
+.cmp-debug-panel__close {
+	background: none;
+	border: none;
+	color: #e0e0e0;
+	font-size: 16px;
+	cursor: pointer;
+	line-height: 1;
+}
+
+.cmp-debug-panel__body {
+	padding: 4px 12px 12px;
+}
+
+.cmp-debug-panel__body section {
+	margin-top: 12px;
+}
+
+.cmp-debug-panel__body h3 {
+	margin: 0 0 6px;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: #999;
+}
+
+.cmp-debug-panel__body table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.cmp-debug-panel__body td {
+	padding: 2px 4px;
+	border-bottom: 1px solid #2a2a2a;
+}
+
+.cmp-debug-panel__body dl {
+	margin: 0;
+}
+
+.cmp-debug-panel__body dt {
+	color: #999;
+	float: left;
+	clear: left;
+	margin-right: 6px;
+}
+
+.cmp-debug-panel__body dt::after {
+	content: ':';
+}
+
+.cmp-debug-panel__body dd {
+	margin: 0 0 2px 0;
+	word-break: break-all;
+}
+
+.cmp-debug-panel__body ul {
+	margin: 0;
+	padding-left: 16px;
+}
+
+.cmp-debug-panel__body li {
+	word-break: break-all;
+	margin-bottom: 2px;
+}
+
+.cmp-debug-panel__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+}
+
+.cmp-debug-panel__actions button {
+	background: #2a2a2a;
+	color: #e0e0e0;
+	border: 1px solid #444;
+	border-radius: 3px;
+	padding: 4px 8px;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 11px;
+}
+
+.cmp-debug-panel__actions button:hover {
+	background: #3a3a3a;
+}
+
+#cmp-debug-toggle:focus-visible,
+#cmp-debug-panel :focus-visible {
+	outline: 2px solid #7dffb3;
+	outline-offset: 1px;
+}
