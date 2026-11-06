@@ -2,7 +2,7 @@
 
 By [Philipp Krueger](https://www.philippkrueger.com/).
 
-A WordPress consent management plugin. It blocks consent-dependent scripts, embeds and pixels until a visitor allows them, and helps administrators check that this is really what happens on their site.
+A WordPress consent management plugin. It aims to hold back consent-dependent scripts, embeds and pixels until a visitor allows them, and helps administrators check what happens on their site.
 
 - Blocking before consent for known services and for scripts you manage in the plugin, released per category or per service.
 - A banner with equally easy Accept all / Reject all, per-service choices, a floating button to change the decision, and a link to your privacy policy.
@@ -14,7 +14,9 @@ A WordPress consent management plugin. It blocks consent-dependent scripts, embe
 - Google Consent Mode v2 (Basic and Advanced). This is not IAB TCF support and not a certified CMP.
 - An optional first-party proxy for scripts you manage, with diagnostics and opt-in email alerts.
 
-It does not make a site legally compliant by itself, and it does not detect every tracking technology. See the limits in the administrator guide.
+## Important limitations
+
+Consentimental is a personal project provided as-is. There is no guarantee that it works correctly, detects or blocks every cookie or tracking technology, or makes a site compliant with the GDPR/DSGVO, TDDDG, ePrivacy rules, or any other law. Site owners are responsible for assessing their own requirements, configuring and testing the plugin, and checking what their site actually loads. See the [administrator guide](docs/admin-guide.md) for known limitations.
 
 ## Documentation
 
