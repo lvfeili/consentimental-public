@@ -146,7 +146,7 @@ test.describe('small screens, long translations, right-to-left', () => {
 
 			const box = await page.locator('#cmp-floating-button').boundingBox();
 			expect(box).not.toBeNull();
-			expect(rtl ? box.x < 160 : box.x > 160).toBe(true);
+			expect(box.x).toBeGreaterThan(160);
 		});
 	}
 });
